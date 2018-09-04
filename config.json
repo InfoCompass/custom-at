@@ -1,0 +1,15 @@
+{
+	"backendLocation": 	"http://78.46.152.176:8071",
+	"statsLocation":	"http://78.46.152.176:8072",
+	"block":			"",
+	"title":			"Test",
+	"languages":		["de"],
+	"map":{
+		"tiles":		"https://{s}.tiles.mapbox.com/v4/mapbox.streets-basic/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoicmhvdGVwIiwiYSI6ImNqMGRib2dmYTAwMGEzMnBkNDBuZ2dqMHMifQ.LNUbADugC76iQ91I73xFwg"
+	},
+	"sharing": {
+		"twitter": {
+			"hashtag": "test"
+		} 
+	}
+}
