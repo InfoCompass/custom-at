@@ -3,22 +3,52 @@
 
 
 
-	exports.categories = []
+	exports.categories = [
+		{
+			name:	'migration_counseling',
+			colors:	[],
+			tags: 	[]
+		},
+		{
+			namekey: "value", 'asylum_counseling',
+			colors:	[],
+			tags: 	[]
+		},
+		{
+			name:	'support',
+			colors:	[],
+			tags: 	[]
+		},
+		{
+			name:	'labour',
+			colors:	[],
+			tags: 	[]
+		},
+		{
+			name:	'health',
+			colors:	[],
+			tags: 	[]
+		},
+		{
+			name:	'accomodation',
+			colors:	[],
+			tags: 	[]
+		},
+		{
+			name:	'anti_discrimination',
+			colors:	[],
+			tags: 	[]
+		},
+		{
+			name:	'violence'
+			colors:	[],
+			tags: 	[]
+		},
+	]
 
 	exports.types = []
 
 	exports.tags = {
-		topics: [
-			'migration_counseling',
-			'asylum_counseling',
-			'support',
-			'labour',
-			'health',
-			'accomodation',
-			'anti_discrimination',
-			'violence'
-
-		],
 		target_groups: [
 			'young',
 			'women',
