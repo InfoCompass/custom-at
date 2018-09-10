@@ -40,7 +40,7 @@
 			tags: 	[]
 		},
 		{
-			name:	'violence'
+			name:	'violence',
 			colors:	[],
 			tags: 	[]
 		},
