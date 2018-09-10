@@ -5,12 +5,12 @@
 
 	exports.categories = [
 		{
-			name:	'migration_counseling',
+			name:	'migration-counseling',
 			colors:	[],
 			tags: 	[]
 		},
 		{
-			name:	'asylum_counseling',
+			name:	'asylum-counseling',
 			colors:	[],
 			tags: 	[]
 		},
@@ -35,7 +35,7 @@
 			tags: 	[]
 		},
 		{
-			name:	'anti_discrimination',
+			name:	'anti-discrimination',
 			colors:	[],
 			tags: 	[]
 		},
@@ -86,7 +86,7 @@
 			'polish',
 			'romani',
 			'russian',
-			'serbian_croatian',
+			'serbian-croatian',
 			'spanish',
 			'tigrinya',
 			'turkish',
