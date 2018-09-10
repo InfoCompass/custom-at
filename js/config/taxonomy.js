@@ -10,7 +10,7 @@
 			tags: 	[]
 		},
 		{
-			namekey: "value", 'asylum_counseling',
+			name:	'asylum_counseling',
 			colors:	[],
 			tags: 	[]
 		},
