@@ -53,7 +53,7 @@
 			'young',
 			'women',
 			'refugees',
-			'eu_citizens',
+			'eu-citizens',
 			'lgbtiq',
 			'misc'
 		],	
