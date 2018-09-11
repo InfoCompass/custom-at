@@ -5,12 +5,12 @@
 
 	exports.categories = [
 		{
-			name:	'migration-counseling',
+			name:	'migration_counseling',
 			colors:	[],
 			tags: 	[]
 		},
 		{
-			name:	'asylum-counseling',
+			name:	'asylum_counseling',
 			colors:	[],
 			tags: 	[]
 		},
@@ -35,7 +35,7 @@
 			tags: 	[]
 		},
 		{
-			name:	'anti-discrimination',
+			name:	'anti_discrimination',
 			colors:	[],
 			tags: 	[]
 		},
@@ -53,21 +53,21 @@
 			'young',
 			'women',
 			'refugees',
-			'eu-citizens',
+			'eu_citizens',
 			'lgbtiq',
 			'misc'
 		],	
 		districts: [
 			'mitte',
-			'friedrichshain-kreuzberg',
+			'friedrichshain_kreuzberg',
 			'pankow',
-			'charlottenburg-wilmersdorf',
+			'charlottenburg_wilmersdorf',
 			'spandau',
-			'steglitz-zehlendorf',
-			'tempelhof-schoeneberg',
+			'steglitz_zehlendorf',
+			'tempelhof_schoeneberg',
 			'neukoelln',
-			'treptow-koepenik',
-			'marzahn-hellersdorf',
+			'treptow_koepenik',
+			'marzahn_hellersdorf',
 			'lichtenberg',
 			'reinickendorf'
 		],
@@ -86,7 +86,7 @@
 			'polish',
 			'romani',
 			'russian',
-			'serbian-croatian',
+			'serbian_croatian',
 			'spanish',
 			'tigrinya',
 			'turkish',
