@@ -1,0 +1,11 @@
+ic-page header .search {
+	position:					absolute;
+	bottom:						0;
+	background:					transparent;
+	left:						0;
+	right:						0;
+}
+
+ic-search form {
+	background:					transparent;
+}
