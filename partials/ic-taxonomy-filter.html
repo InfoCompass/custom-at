@@ -1,0 +1,22 @@
+<section class = "categories" ng-if = "ic.taxonomy.categories && ic.taxonomy.categories.length > 0">
+	<h2 
+		class 		= "bg-0 icon"
+		ng-class	= "{'icon-interface-down': expand.categories, 'icon-interface-right': !expand.categories}"
+		ng-click	= "ic.overlays.toggle('taxonomyOverlayCategories')"
+		ic-touch-me	= "true" 
+	>{{'INTERFACE.CATEGORIES' | translate}}</h2>
+	
+</section>
+
+<section 
+	class 		= "unsorted"
+	ng-repeat 	= " (key, tagGroup) in ic.taxonomy.tags" 
+>
+	<h2 
+		class 		= "bg-0 icon"
+		ng-class	= "{'icon-interface-down': expand.tags[key], 'icon-interface-right': !expand.tags[key]}"
+		ng-click	= "ic.overlays.toggle('taxonomyOverlay_'+key)"
+		ic-touch-me	= "true" 
+	>{{'INTERFACE.TAGS_%s' | fill : key| translate}}</h2>
+	
+</section>
