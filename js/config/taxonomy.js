@@ -55,7 +55,7 @@
 			'refugees',
 			'eu_citizens',
 			'lgbtiq',
-			'misc'
+			'misc_target'
 		],	
 		districts: [
 			'mitte',
@@ -91,7 +91,7 @@
 			'tigrinya',
 			'turkish',
 			'vietnamese',
-			'misc'
+			'misc_lang'
 		]
 	}
 

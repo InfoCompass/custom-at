@@ -9,3 +9,61 @@ ic-page header .search {
 ic-search form {
 	background:					transparent;
 }
+
+
+
+
+ic-taxonomy-overlay {
+	padding-top:					0;
+	padding-left:					1rem;
+	padding-right:					1rem;
+	padding-bottom:					1rem;
+}
+
+
+ic-taxonomy-overlay ul {
+	padding-left:				0 !important;
+	padding-right:				0 !important;
+	padding-top:				0 !important;
+	padding-bottom:				0 !important;
+	margin:						0;
+	max-width:					45rem;
+	margin:						auto;
+	display:					flex;
+	flex-wrap:					wrap;
+	width:						auto !important;
+}
+
+ic-taxonomy-overlay ul li {
+	flex:						0 0 20rem;
+	display:					flex !important;
+	align-items:				center;
+	justify-content:			start;
+	height:						3rem;
+	padding-left:				3rem;
+	padding-right:				0.5rem;
+	background-position:		1rem 50% !important;
+}
+
+ic-taxonomy-overlay ul .types li.disabled {
+	display:					none;
+}
+
+ic-taxonomy-overlay ul .categories li.disabled {
+	display:					none;
+}
+
+ic-taxonomy-overlay ul .unsorted li.disabled {
+	display:					none;
+}
+
+ic-taxonomy-overlay ul li div {
+	flex:						1 1 auto;
+	display:					inline-block;
+	vertical-align:				middle;
+}
+
+ic-taxonomy-overlay ul li .bubble {
+	display:					inline-block;
+	flex:						0 0 auto;
+}

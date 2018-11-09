@@ -1,6 +1,6 @@
 {
-	"backendLocation": 	"http://78.46.152.176:8071",
-	"statsLocation":	"http://78.46.152.176:8072",
+	"backendLocation": 	"https://api.info-compass.net",
+	"statsLocation":	"https://78.46.152.176:8072",
 	"block":			"",
 	"title":			"Test",
 	"languages":		["de", "none"],
