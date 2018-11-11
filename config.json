@@ -1,11 +1,11 @@
 {
-	"xbackendLocation": 	"https://api.info-compass.net",
+	"xbackendLocation": "https://api.info-compass.net",
 	"backendLocation":	"http://78.46.152.176:8071",
 	"statsLocation":	"https://78.46.152.176:8072",
 	"block":			"",
 	"title":			"Test",
 	"languages":		["de", "none"],
-	"activeIconColor":	"#ACD4E6",
+	"activeIconColor":	"#629bd2",
 	"map":{
 		"tiles":		"https://{s}.tiles.mapbox.com/v4/mapbox.streets-basic/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoicmhvdGVwIiwiYSI6ImNqMGRib2dmYTAwMGEzMnBkNDBuZ2dqMHMifQ.LNUbADugC76iQ91I73xFwg"
 	},

@@ -12,7 +12,7 @@
 }
 
 .bg-0.hover:hover{
-	background-color:			#ACD4E6;
+	background-color:			#629bd2;
 	color:						#fff !important;
 }
 
@@ -63,18 +63,18 @@
 
 
 .bg-3 {
-	background-color:			#ACD4E6;
+	background-color:			#629bd2;
 	color:						#fff;
 }
 
 .bg-3.hover:hover{
 	background-color:			#fff;
-	color:						#ACD4E6;
+	color:						#629bd2;
 }
 
 
 .border-3 {
-	box-shadow:					0 0 0 0.1rem #ACD4E6 inset;
+	box-shadow:					0 0 0 0.1rem #629bd2 inset;
 }
 
 
@@ -109,9 +109,9 @@
 }
 
 .col-3 {
-	color:						#ACD4E6 !important;
+	color:						#629bd2 !important;
 }
 
 .active {
-	color:						#ACD4E6;
+	color:						#629bd2;
 }
