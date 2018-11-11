@@ -6,42 +6,42 @@
 	exports.categories = [
 		{
 			name:	'migration_counseling',
-			colors:	[],
+			colors:	['#f2b134'],
 			tags: 	[]
 		},
 		{
 			name:	'asylum_counseling',
-			colors:	[],
+			colors:	['#9caec2'],
 			tags: 	[]
 		},
 		{
 			name:	'support',
-			colors:	[],
+			colors:	['#068587'],
 			tags: 	[]
 		},
 		{
 			name:	'labour',
-			colors:	[],
+			colors:	['#438eba'],
 			tags: 	[]
 		},
 		{
 			name:	'health',
-			colors:	[],
+			colors:	['#A0C08E'],
 			tags: 	[]
 		},
 		{
 			name:	'accomodation',
-			colors:	[],
+			colors:	['#da6bbe'],
 			tags: 	[]
 		},
 		{
 			name:	'anti_discrimination',
-			colors:	[],
+			colors:	['#4fb99f'],
 			tags: 	[]
 		},
 		{
 			name:	'violence',
-			colors:	[],
+			colors:	['#ed553b'],
 			tags: 	[]
 		},
 	]
