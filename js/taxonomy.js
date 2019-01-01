@@ -37,7 +37,7 @@
 		{
 			name:	'disabilities',
 			colors:	['#22a'],
-			tags:	[]
+			tags:	[],
 		}
 		{
 			name:	'accomodation',
