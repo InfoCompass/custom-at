@@ -37,8 +37,8 @@
 		{
 			name:	'disabilities',
 			colors:	['#22a'],
-			tags:	[],
-		}
+			tags:	[]
+		},
 		{
 			name:	'accomodation',
 			colors:	['#da6bbe'],
@@ -46,7 +46,7 @@
 		},
 		{
 			name:	'penaltiy',
-			color:	['#a2a'],
+			colors:	['#a2a'],
 			tags:	[]
 		},
 		{
