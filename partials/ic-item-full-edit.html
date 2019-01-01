@@ -1,0 +1,536 @@
+<header class = "bg-0">
+	<div 
+		class		= "hero" 
+		ng-style	= "{'background-image' : 'url('+icItem.image+')'}" 
+		ng-if		= "icItem.image"
+	></div> 
+</header>
+
+
+
+
+<section class = "bg-0 padding">
+
+
+	<div ng-if = "ic.user.can('edit_items')">		
+		<div> <!-- spacer --> </div>
+		<div>
+
+			<div ng-if = "icItem.creator">
+				{{'ITEMS.CREATOR' | translate}} 	 	{{icItem.creator 	}} 	({{icItem.creationDate | icDate}})
+			</div>
+			<div ng-if  ="icItem.lastEditor">
+				{{'ITEMS.LAST_EDITOR' | translate}}  	{{icItem.lastEditor	}}	({{icItem.lastEditDate | icDate}})
+			</div>	
+			<div ng-if = "!icItem.internal.new && ic.user.can('edit_items')">
+				<a class = "active" ng-click ="ic.admin.autoTranslate(icItem)">{{'INTERFACE.AUTO_TRANSLATE'| translate }}</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div>		
+		<div> <!-- spacer --> </div>
+		
+		<!-- EDIT -->
+		<h3 ng-if = "!icItem.internal.new && ic.user.can('edit_items')">{{'INTERFACE.EDIT_ITEM'| translate}}</h3>
+
+
+		<!-- EDIT -->
+		<h3 ng-if = "!icItem.internal.new && !ic.user.can('edit_items')">{{'INTERFACE.SUGGEST_ITEM_EDIT'| translate}}</h3>
+
+		<!-- NEW -->
+		<h3 ng-if = "icItem.internal.new && ic.user.can('edit_items')">{{'INTERFACE.CREATE_NEW_ITEM'| translate}}</h3>
+
+		<!-- SUGGESTION -->
+		<h3 ng-if = "icItem.internal.new && !ic.user.can('edit_items')">{{'INTERFACE.SUGGEST_NEW_ITEM'| translate}}</h3>
+	</div>
+
+
+	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+
+	<!-- title -->
+
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.TITLE' | translate}}</h4>
+
+
+			<ic-item-property-edit
+				ic-item					= "icItem"
+				ic-type 				= "string"
+				ic-key					= "title"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<!-- brief -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.BRIEF' | translate}} ({{'LANGUAGES.%s' | fill: ic.site.currentLanguage | translate}})</h4>
+
+			<ic-item-property-edit
+				ic-item					= "icItem"
+				ic-key					= "brief"
+				ic-type 				= "string"
+				ic-translatable			= "true"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+	<!-- description -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.DESCRIPTION' | translate}} ({{'LANGUAGES.%s' | fill: ic.site.currentLanguage | translate}})</h4>
+			
+			<ic-item-property-edit
+				ic-item					= "icItem"
+				ic-key					= "description"
+				ic-type 				= "text"
+				ic-translatable			= "true"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<!-- image -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.IMAGE' | translate}}</h4>
+
+			<ic-help ic-message = "ITEMS.IMAGE_HELP"></ic-help>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "image"
+				ic-item					= "icItem"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+
+	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+	
+
+	<!-- tags/catgeory -->
+
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.CATEGORY' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-item						= "icItem"
+				ic-type						= "array"
+				ic-translation-key			= "category"
+				ic-options					= "ic.taxonomy.categories | mapToKey : 'name' | preventLoop"
+				ic-option-label				= "'CATEGORIES.%s' | fill: option | translate"
+				ic-option-icon-class		= "'icon-category-' + option"
+				ic-allow-multiple-choices	= "false"
+				ic-force-choice				= "true"
+				ic-key						= "tags"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+	<!-- tags/unsorted -->
+
+	<article ng-repeat = "(key, tag_group) in ic.taxonomy.tags">
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'INTERFACE.TAGS_%s' | fill : key | translate}}</h4>
+
+			<ic-item-property-edit
+				ng-if						= "key != 'extra'"
+				ic-item						= "icItem"
+				ic-type						= "array"
+				ic-translation-key			= "unsorted"
+				ic-options					= "tag_group"
+				ic-option-label				= "'UNSORTED_TAGS.%s' | fill: option | translate"
+				ic-allow-multiple-choices	= "true"
+				ic-key						= "tags"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+
+
+	<div>
+		<div><div class = "icon icon-property-location"></div></div>
+		<h4>{{'ITEMS.FULL_ADDRESS' | translate}}</h4>
+	</div>
+
+
+	<!-- location -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.LOCATION' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "location"
+				ic-item					= "icItem"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<!-- address -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.ADDRESS' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "address"
+				ic-item					= "icItem"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+	<!-- zip -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.ZIP' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "zip"
+				ic-item					= "icItem"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+	<!-- city -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.CITY' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "city"
+				ic-item					= "icItem"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+	<article>
+		<div> <div class = "icon icon-property-coordinates"></div> </div>
+		<div>
+			<div class = "split">
+				<div>
+					<h4> {{'ITEMS.LATITUDE' | translate}}</h4>
+					
+					<ic-help ic-message = "{{ 'ITEMS.LATITUDE_HELP' }}"></ic-help>
+
+					<ic-item-property-edit
+						ic-type 				= "string"
+						ic-key					= "latitude"
+						ic-item					= "icItem"
+					></ic-item-property-edit>
+				</div>
+				<div>
+					<h4> {{'ITEMS.LONGITUDE' | translate}}</h4>
+					
+					<ic-help ic-message = "{{ 'ITEMS.LONGITUDE_HELP' }}"></ic-help>
+
+					<ic-item-property-edit
+						ic-type 				= "string"
+						ic-key					= "longitude"
+						ic-item					= "icItem"
+					></ic-item-property-edit>
+				</div>
+				<button
+					ng-click = "pickCoordinates()"
+				>
+					{{!!pickCoordinates}} 
+					{{'INTERFACE_PICK_COORDINATES' | translate}}
+					}
+				</button>
+			</div>
+		</div>
+	</article>
+
+	
+
+
+
+
+	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+
+	<!-- misc-->
+	<article ng-repeat = "key in ['contact', 'email', 'phone', 'website', 'facebook', 'twitter']">
+		<div> <div class = "icon icon-property-{{key}}"></div> </div>
+		<div>
+			<h4> {{'ITEMS.%s' | fill : key | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "{{key}}"
+				ic-item					= "icItem"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+
+
+	<div>
+		<div><div class = "icon icon-property-time"></div></div>
+		<h4>{{'ITEMS.DATES' | translate}}</h4>
+	</div>
+
+
+
+
+	<!-- start date -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.START_DATE' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "startDate"
+				ic-item					= "icItem"
+				ic-date					= "true"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+
+
+
+	<!-- end date -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.END_DATE' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-type 				= "string"
+				ic-key					= "endDate"
+				ic-item					= "icItem"
+				ic-date					= "true"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+
+
+	<article
+		ng-if = "ic.user.can('edit_items')"
+	>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.STATE' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-item						= "icItem"
+				ic-type						= "string"
+				ic-options					= "true"
+				ic-option-label				= "'ITEMS.STATE_%s' | fill: option | translate"
+				ic-allow-multiple-choices	= "false"
+				ic-force-choice				= "true"
+				ic-key						= "state"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.EDITING_NOTE' | translate}}</h4>
+
+			<ic-item-property-edit
+				ic-item						= "icItem"
+				ic-type						= "text"
+				ic-key						= "editingNote"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<article>
+		<div> <!-- spacer --></div>
+
+
+		<!-- EDIT -->
+
+		<div 
+			class = "controls"
+			ng-if = "!icItem.internal.new && ic.user.can('edit_items')"
+		>
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "cancel()" 
+				ic-touch-me
+			>
+				{{"INTERFACE.CANCEL_EDIT" | translate}}
+			</button>
+
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "revertAll()" 
+				ic-touch-me
+			>
+				{{"INTERFACE.ITEM_REVERT_ALL" | translate}}
+			</button>
+
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "validate() ? ic.overlays.open('popup', 'INTERFACE.VALIDATION_SUCESSFUL') : ic.overlays.open('popup', 'INTERFACE.VALIDATION_FAILED')"	 
+				ic-touch-me
+			>
+				{{"INTERFACE.ITEM_VALIDATE" | translate}}
+			</button>
+
+
+			<button
+				class 		= "bg-3 col-2 padding"
+				ng-click 	= "submit()"	 
+				ic-touch-me
+			>
+				{{"INTERFACE.SUBMIT_CHANGES" | translate}}
+			</button>
+		</div>
+
+
+
+		<!-- EDIT SUGGESTION-->
+
+		<div 
+			class = "controls"
+			ng-if = "!icItem.internal.new && !ic.user.can('edit_items')"
+		>
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "cancel()" 
+				ic-touch-me
+			>
+				{{"INTERFACE.CANCEL_EDIT_SUGGESTION" | translate}}
+			</button>
+
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "revertAll()" 
+				ic-touch-me
+			>
+				{{"INTERFACE.ITEM_REVERT_ALL" | translate}}
+			</button>
+
+
+			<button
+				class 		= "bg-3 col-2 padding"
+				ng-click 	= "submit()"	 
+				ic-touch-me
+			>
+				{{"INTERFACE.SUBMIT_EDIT_SUGGESTION" | translate}}
+			</button>
+		</div>
+
+
+		<!-- NEW -->
+
+		<div 
+			class = "controls"
+			ng-if = "icItem.internal.new && ic.user.can('edit_items')"
+		>
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "cancel()" 
+				ic-touch-me
+			>
+				{{"INTERFACE.CANCEL_CREATION" | translate}}
+			</button>
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "validate() ? ic.overlays.open('popup', 'INTERFACE.VALIDATION_SUCESSFUL') : ic.overlays.open('popup', 'INTERFACE.VALIDATION_FAILED')"	 
+				ic-touch-me
+			>
+				{{"INTERFACE.ITEM_VALIDATE" | translate}}
+			</button>
+
+
+			<button
+				class 		= "bg-3 col-2 padding"
+				ng-click 	= "submit()"	 
+				ic-touch-me
+			>
+				{{"INTERFACE.SUBMIT_NEW_ITEM" | translate}}
+			</button>
+		</div>
+
+
+
+		<!-- SUGGESTION -->
+
+		<div 
+			class = "controls"
+			ng-if = "icItem.internal.new && !ic.user.can('edit_items')"
+		>
+
+			<button
+				class 		= "active border-3 bg-0 padding"
+				ng-click 	= "cancel()" 
+				ic-touch-me
+			>
+				{{"INTERFACE.CANCEL_SUGGESTION" | translate}}
+			</button>
+
+
+			<button
+				class 		= "bg-3 col-2 padding"
+				ng-click 	= "submit()"
+				ic-touch-me
+			>
+				{{"INTERFACE.SUBMIT_SUGGESTION" | translate}}
+			</button>
+		</div>
+
+	</article>
+</section>

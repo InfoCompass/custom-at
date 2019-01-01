@@ -30,12 +30,27 @@
 			tags: 	[]
 		},
 		{
+			name:	'addiction',
+			colors:	['#a22'],
+			tags:	[],
+		},
+		{
+			name:	'disabilities',
+			colors:	['#22a'],
+			tags:	[]
+		}
+		{
 			name:	'accomodation',
 			colors:	['#da6bbe'],
 			tags: 	[]
 		},
 		{
-			name:	'anti_discrimination',
+			name:	'penaltiy',
+			color:	['#a2a'],
+			tags:	[]
+		},
+		{
+			name:	'discrimination',
 			colors:	['#4fb99f'],
 			tags: 	[]
 		},
@@ -52,8 +67,10 @@
 		target_groups: [
 			'young',
 			'women',
-			'refugees',
+			'asylum_seekers',
 			'eu_citizens',
+			'no_health_ensurance',
+			'houselss',
 			'lgbtiq',
 			'misc_target'
 		],	
@@ -74,16 +91,17 @@
 		languages: [
 			'arabic',
 			'bulgarian',
+			'bosanski',
 			'dari',
 			'english',
 			'farsi',
 			'french',
 			'greek',
 			'italian',
-			'kurmandji',
 			'kurdish',
 			'pashto',
 			'polish',
+			'romanian',
 			'romani',
 			'russian',
 			'serbian_croatian',
