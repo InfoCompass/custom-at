@@ -109,7 +109,6 @@
 			'tigrinya',
 			'turkish',
 			'vietnamese',
-			'misc_lang'
 		]
 	}
 

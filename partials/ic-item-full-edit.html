@@ -148,7 +148,7 @@
 
 	<!-- tags/unsorted -->
 
-	<article ng-repeat = "(key, tag_group) in ic.taxonomy.tags">
+	<article ng-repeat = "key in ['target_groups', 'districts', 'languages']">
 		<div> <!-- spacer --> </div>
 		<div>
 			<h4> {{'INTERFACE.TAGS_%s' | fill : key | translate}}</h4>
@@ -158,7 +158,7 @@
 				ic-item						= "icItem"
 				ic-type						= "array"
 				ic-translation-key			= "unsorted"
-				ic-options					= "tag_group"
+				ic-options					= "ic.taxonomy.tags[key]"
 				ic-option-label				= "'UNSORTED_TAGS.%s' | fill: option | translate"
 				ic-allow-multiple-choices	= "true"
 				ic-key						= "tags"
