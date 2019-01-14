@@ -268,9 +268,7 @@
 				<button
 					ng-click = "pickCoordinates()"
 				>
-					{{!!pickCoordinates}} 
 					{{'INTERFACE_PICK_COORDINATES' | translate}}
-					}
 				</button>
 			</div>
 		</div>
@@ -300,56 +298,6 @@
 
 
 	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
-
-
-
-	<div>
-		<div><div class = "icon icon-property-time"></div></div>
-		<h4>{{'ITEMS.DATES' | translate}}</h4>
-	</div>
-
-
-
-
-	<!-- start date -->
-	<article>
-		<div> <!-- spacer --> </div>
-		<div>
-			<h4> {{'ITEMS.START_DATE' | translate}}</h4>
-
-			<ic-item-property-edit
-				ic-type 				= "string"
-				ic-key					= "startDate"
-				ic-item					= "icItem"
-				ic-date					= "true"
-			></ic-item-property-edit>
-		</div>
-	</article>
-
-
-
-
-
-
-	<!-- end date -->
-	<article>
-		<div> <!-- spacer --> </div>
-		<div>
-			<h4> {{'ITEMS.END_DATE' | translate}}</h4>
-
-			<ic-item-property-edit
-				ic-type 				= "string"
-				ic-key					= "endDate"
-				ic-item					= "icItem"
-				ic-date					= "true"
-			></ic-item-property-edit>
-		</div>
-	</article>
-
-
-
-	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
-
 
 
 	<article
