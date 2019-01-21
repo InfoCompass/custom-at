@@ -21,6 +21,6 @@
 		"twitter": {
 			"hashtag": "test"
 		},
-		"mail": true
+		"email": true
 	}
 }
