@@ -1,27 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
-    <title>Topic-Icons/Wohnungsnot_state-b</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Topic-Icons/Wohnungsnot_state-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-18" transform="translate(2.000000, 1.000000)" fill="#000000">
-            <polygon id="Fill-1" points="2.01 15.0179 4.011 15.0179 4.011 14.0179 2.01 14.0179"></polygon>
-            <polygon id="Fill-2" points="2.01 12.0179 4.011 12.0179 4.011 11.0169 2.01 11.0169"></polygon>
-            <polygon id="Fill-3" points="8.01 12.0179 10.01 12.0179 10.01 11.0169 8.01 11.0169"></polygon>
-            <polygon id="Fill-4" points="5.01 12.0179 7.01 12.0179 7.01 11.0169 5.01 11.0169"></polygon>
-            <polygon id="Fill-5" points="5.01 15.0179 7.01 15.0179 7.01 14.0179 5.01 14.0179"></polygon>
-            <polygon id="Fill-6" points="5.01 9.0169 7.01 9.0169 7.01 8.0169 5.01 8.0169"></polygon>
-            <polygon id="Fill-7" points="5.01 6.0179 7.01 6.0179 7.01 5.0179 5.01 5.0179"></polygon>
-            <polygon id="Fill-8" points="5.01 3.0179 7.01 3.0179 7.01 2.0169 5.01 2.0169"></polygon>
-            <polygon id="Fill-9" points="2.01 9.0169 4.011 9.0169 4.011 8.0169 2.01 8.0169"></polygon>
-            <polygon id="Fill-10" points="8.01 9.0169 10.01 9.0169 10.01 8.0169 8.01 8.0169"></polygon>
-            <polygon id="Fill-11" points="2.01 6.0179 4.011 6.0179 4.011 5.0179 2.01 5.0179"></polygon>
-            <polygon id="Fill-12" points="8.01 6.0179 10.01 6.0179 10.01 5.0179 8.01 5.0179"></polygon>
-            <polygon id="Fill-13" points="2.01 3.0179 4.011 3.0179 4.011 2.0169 2.01 2.0169"></polygon>
-            <polygon id="Fill-14" points="8.01 3.0179 10.01 3.0179 10.01 2.0169 8.01 2.0169"></polygon>
-            <polygon id="Fill-15" points="15 17.0179 17 17.0179 17 15.0179 15 15.0179"></polygon>
-            <polygon id="Fill-16" points="11 17.0179 13 17.0179 13 15.0179 11 15.0179"></polygon>
-            <path d="M0,0.0002 L0,19.0102 L8,19.0102 L8,20.0102 L20,20.0102 L20,14.0092 L14,10.0102 L12,11.3242 L12,0.0002 L0,0.0002 Z M1,1.0002 L11,1.0002 L11,11.9902 L8,14.0092 L8,18.0102 L1,18.0102 L1,1.0002 Z M9,14.4902 L11,13.1902 L11.555,12.8362 L14,11.2902 L19,14.4902 L19,19.0102 L9,19.0102 L9,14.4902 Z" id="Fill-17"></path>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="#000000" fill-rule="evenodd" transform="translate(2 2)">
+    <polygon points="2 15 4 15 4 14 2 14"/>
+    <polygon points="2 12 4 12 4 11 2 11"/>
+    <polygon points="8 12 10 12 10 11 8 11"/>
+    <polygon points="5 12 7 12 7 11 5 11"/>
+    <polygon points="5 15 7 15 7 14 5 14"/>
+    <polygon points="5 9 7 9 7 8 5 8"/>
+    <polygon points="5 6 7 6 7 5 5 5"/>
+    <polygon points="8 6 10 6 10 5 8 5"/>
+    <polygon points="5.004 3 7.005 3 7.005 2 5.004 2"/>
+    <polygon points="8 3 10 3 10 2 8 2"/>
+    <polygon points="2 9 4 9 4 8 2 8"/>
+    <polygon points="8 9 10 9 10 8 8 8"/>
+    <polygon points="2 6 4 6 4 5 2 5"/>
+    <polygon points="1.999 3 3.999 3 3.999 2 1.999 2"/>
+    <polygon points="15 17 17 17 17 15 15 15"/>
+    <polygon points="11 17 13 17 13 15 11 15"/>
+    <path d="M0,0.0002 L0,19.0002 L8,19.0002 L8,20.0002 L20,20.0002 L20,13.9992 L13.999,10.0002 L12,11.3142 L12,0.0002 L0,0.0002 Z M1,0.9902 L11,0.9902 L11,11.9792 L8,13.9992 L8,18.0002 L1,18.0002 L1,0.9902 Z M9,14.4802 L11,13.1802 L11.554,12.8262 L13.999,11.2802 L19,14.4802 L19,19.0002 L9,19.0002 L9,14.4802 Z"/>
+  </g>
 </svg>

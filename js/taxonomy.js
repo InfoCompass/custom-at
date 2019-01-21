@@ -45,7 +45,7 @@
 			tags: 	[]
 		},
 		{
-			name:	'penaltiy',
+			name:	'penalty',
 			colors:	['#a2a'],
 			tags:	[]
 		},

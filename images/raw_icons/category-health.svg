@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
-    <title>Topic-Icons/Gesundheit_state-b</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Topic-Icons/Gesundheit_state-b" stroke="none" stroke-width="1" fill-rule="evenodd">
-        <path d="M8,2 L8,7.999 L2,7.999 L2,15.999 L8,15.999 L8,22 L16,22 L16,21 L16,15.999 L21.999,15.999 L21.999,7.999 L16,7.999 L16,2 L8,2 Z M3,9 L9,9 L9,3 L14.999,3 L14.999,9 L21,9 L21,15 L14.999,15 L14.999,21 L9,21 L9,15 L3,15 L3,9 Z" id="Page-1" fill="#000000"></path>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="#000000" fill-rule="evenodd" transform="translate(2 3)">
+    <path d="M5.0005,-0.0002 L5.0005,3.0008 L0.9995,3.0008 L0.9995,15.9998 L19.0005,15.9998 L19.0005,3.0008 L15.0015,3.0008 L15.0015,-0.0002 L5.0005,-0.0002 Z M6.0015,3.0008 L14.0005,3.0008 L14.0005,0.9998 L6.0015,0.9998 L6.0015,3.0008 Z M1.9995,15.0008 L18.0005,15.0008 L18.0005,4.0008 L1.9995,4.0008 L1.9995,15.0008 Z"/>
+    <path d="M12.0009,5 L8.0009,5 L8.0009,7.5 L5.5009,7.5 L5.5009,11.5 L8.0009,11.5 L8.0009,14 L12.0009,14 L12.0009,11.5 L14.4999,11.5 L14.4999,7.5 L12.0009,7.5 L12.0009,5 Z M11.0009,6 L11.0009,7.5 L11.0009,8.5 L12.0009,8.5 L13.4999,8.5 L13.4999,10.5 L12.0009,10.5 L11.0009,10.5 L11.0009,11.5 L11.0009,13 L9.0009,13 L9.0009,11.5 L9.0009,10.5 L8.0009,10.5 L6.5009,10.5 L6.5009,8.5 L8.0009,8.5 L9.0009,8.5 L9.0009,7.5 L9.0009,6 L11.0009,6 Z"/>
+  </g>
 </svg>
