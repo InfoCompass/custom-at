@@ -1,6 +1,7 @@
 
 ic-header .logo {
 	justify-content:			flex-start;
+	margin-left:				2rem;
 }
 
 ic-page header .search {
