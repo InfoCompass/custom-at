@@ -5,19 +5,34 @@
 
 	exports.categories = [
 		{
-			name:	'migration_counseling',
-			colors:	['#f2b134'],
-			tags: 	[]
-		},
-		{
-			name:	'asylum_counseling',
-			colors:	['#9caec2'],
+			name:	'health',
+			colors:	['#53C294'],
 			tags: 	[]
 		},
 		{
 			name:	'support',
-			colors:	['#068587'],
+			colors:	['#B2C060'],
 			tags: 	[]
+		},
+		{
+			name:	'discrimination',
+			colors:	['#D69255'],
+			tags: 	[]
+		},
+		{
+			name:	'violence',
+			colors:	['#F4504F'],
+			tags: 	[]
+		},
+		{
+			name:	'migration_counseling',
+			colors:	['#DEA0CA'],
+			tags: 	[]
+		},
+		{
+			name:	'addiction',
+			colors:	['#65B2B7'],
+			tags:	[],
 		},
 		{
 			name:	'labour',
@@ -25,38 +40,23 @@
 			tags: 	[]
 		},
 		{
-			name:	'health',
-			colors:	['#A0C08E'],
-			tags: 	[]
-		},
-		{
-			name:	'addiction',
-			colors:	['#a22'],
-			tags:	[],
-		},
-		{
-			name:	'disabilities',
-			colors:	['#22a'],
-			tags:	[]
-		},
-		{
 			name:	'accomodation',
-			colors:	['#da6bbe'],
+			colors:	['#FA9A20'],
 			tags: 	[]
 		},
 		{
-			name:	'penalty',
-			colors:	['#a2a'],
+			name:	'disability',
+			colors:	['#BC8BD8'],
 			tags:	[]
 		},
 		{
-			name:	'discrimination',
-			colors:	['#4fb99f'],
+			name:	'asylum_counseling',
+			colors:	['#66B2FF'],
 			tags: 	[]
 		},
 		{
-			name:	'violence',
-			colors:	['#ed553b'],
+			name:	'misc_category',
+			colors:	['#66B2FF'],
 			tags: 	[]
 		},
 	]
@@ -70,7 +70,7 @@
 			'asylum_seekers',
 			'eu_citizens',
 			'no_health_ensurance',
-			'houselss',
+			'houseless',
 			'lgbtiq',
 			'misc_target'
 		],	

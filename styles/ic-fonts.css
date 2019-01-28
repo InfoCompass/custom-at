@@ -16,3 +16,13 @@ ic-page a.boxed
 {
 	font-family: 				Fira Sans, sans-serif;
 }
+
+
+ic-header ic-main-menu {
+	font-family: 				Fira Sans, sans-serif;
+}
+
+
+ic-header ic-main-menu ul > li > ul > li {
+	font-family: 				Fira Sans, sans-serif;
+}

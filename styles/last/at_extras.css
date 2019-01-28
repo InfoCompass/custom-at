@@ -14,35 +14,45 @@ ic-search form {
 
 
 ic-taxonomy-overlay {
-	padding-top:					0;
-	padding-left:					1rem;
-	padding-right:					1rem;
-	padding-bottom:					1rem;
+	padding-top:				0;
+	padding-left:				1rem;
+	padding-right:				1rem;
+	padding-bottom:				1rem;
+	
+	display:					flex !important;
+	flex-direction:				column;
+	align-items: 				center;
 }
 
+ic-taxonomy-overlay h2 {
+	display:					block;
+	margin:						0 auto;
+	margin-bottom:				2rem;
+	text-align:					center;
+}
 
 ic-taxonomy-overlay ul {
+	display:					flex;
 	padding-left:				0 !important;
 	padding-right:				0 !important;
 	padding-top:				0 !important;
 	padding-bottom:				0 !important;
-	margin:						0;
-	max-width:					45rem;
 	margin:						auto;
-	display:					flex;
+	max-width:					45rem;
 	flex-wrap:					wrap;
 	width:						auto !important;
+	justify-content: 			space-between;
 }
 
 ic-taxonomy-overlay ul li {
 	flex:						0 0 20rem;
-	display:					flex !important;
+	display:					inline-flex !important;
 	align-items:				center;
 	justify-content:			start;
 	height:						3rem;
 	padding-left:				3rem;
 	padding-right:				0.5rem;
-	background-position:		1rem 50% !important;
+	background-position:		0.75rem 50% !important;
 }
 
 ic-taxonomy-overlay ul .types li.disabled {

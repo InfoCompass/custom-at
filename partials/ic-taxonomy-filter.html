@@ -2,12 +2,13 @@
 </ic-taxonomy-filter-tag-list>
 
 <section class = "categories" ng-if = "ic.taxonomy.categories && ic.taxonomy.categories.length > 0">
-	<h2 
-		class 		= "bg-0 icon"
-		ng-class	= "{'icon-interface-down': expand.categories, 'icon-interface-right': !expand.categories}"
+	<div 
+		class 		= "bg-0 padding tal"
 		ng-click	= "ic.overlays.toggle('taxonomyOverlayCategories')"
 		ic-touch-me	= "true" 
-	>{{'INTERFACE.CATEGORIES' | translate}}</h2>
+	>
+		{{'INTERFACE.CATEGORIES' | translate}}
+	</div>
 	
 </section>
 
@@ -15,11 +16,11 @@
 	class 		= "unsorted"
 	ng-repeat 	= " (key, tagGroup) in ic.taxonomy.tags" 
 >
-	<h2 
-		class 		= "bg-0 icon"
-		ng-class	= "{'icon-interface-down': expand.tags[key], 'icon-interface-right': !expand.tags[key]}"
+	<div
+		class 		= "bg-0 padding tal"
 		ng-click	= "ic.overlays.toggle('taxonomyOverlay_'+key)"
 		ic-touch-me	= "true" 
-	>{{'INTERFACE.TAGS_%s' | fill : key| translate}}</h2>
+	>{{'INTERFACE.TAGS_%s' | fill : key| translate}}
+	</div>
 	
 </section>

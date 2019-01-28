@@ -6,8 +6,8 @@
 	"block":			"",
 	"title":			"Berliner Fachberatung für Zugewanderte",
 	"languages":		["de", "none"],
-	"activeIconColor":	"#629bd2",
-	"plainIconColor":	"",
+	"activeIconColor":	"#659FD8",
+	"plainIconColor":	"#666666",
 	"map":{
 		"center":			[52.518611,13.408333],
 		"zoom":				10,

@@ -138,9 +138,33 @@
 				ic-options					= "ic.taxonomy.categories | mapToKey : 'name' | preventLoop"
 				ic-option-label				= "'CATEGORIES.%s' | fill: option | translate"
 				ic-option-icon-class		= "'icon-category-' + option"
-				ic-allow-multiple-choices	= "false"
+				ic-allow-multiple-choices	= "true"
 				ic-force-choice				= "true"
 				ic-key						= "tags"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
+
+
+	<!-- primary category -->
+
+	<article >
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.PRIMARY_TOPIC' | translate}}</h4>
+
+
+			<ic-item-property-edit
+				ic-item						= "icItem"
+				ic-type						= "string"
+				ic-translation-key			= "PRIMARY_TOPIC"
+				ic-options					= "icEdit.tags | section : (ic.taxonomy.categories | mapToKey: 'name') | preventLoop"
+				ic-option-label				= "'CATEGORIES.%s' | fill: option | translate"
+				ic-option-icon-class		= "'icon-category-' + option"
+				ic-allow-multiple-choices	= "false"
+				ic-force-choice				= "true"
+				ic-key						= "primaryTopic"
 			></ic-item-property-edit>
 		</div>
 	</article>
@@ -266,9 +290,10 @@
 					></ic-item-property-edit>
 				</div>
 				<button
-					ng-click = "pickCoordinates()"
+					class		= "bg-3 padding"
+					ng-click 	= "pickCoordinates()"
 				>
-					{{'INTERFACE_PICK_COORDINATES' | translate}}
+					{{'INTERFACE.PICK_COORDINATES' | translate}}
 				</button>
 			</div>
 		</div>

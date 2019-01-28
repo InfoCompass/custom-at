@@ -1,12 +1,18 @@
+
+
 <button 
 	class 		= "icon icon-interface-close large close"
 	ng-click	= "ic.overlays.toggle()" 
 >
 </button>
 
+<h2 ng-if = "icExpand == 'categories'">{{'INTERFACE.CATEGORIES' | translate}}</h2>
+
+<h2 ng-if = "icExpand != 'categories'">{{'INTERFACE.TAGS_%s' | fill : icExpand | translate}}</h2>	
+
 <ul 
 	class 		= "bg-0"
-	ng-show		= "icExpand == 'categories'"
+	ng-if		= "icExpand == 'categories'"
 >
 	<li
 		ng-if		= "true"
