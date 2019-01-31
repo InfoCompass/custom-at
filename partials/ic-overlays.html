@@ -17,14 +17,14 @@
 
 
 <ic-taxonomy-overlay	
-	ng-if 		= "ic.overlays.show.taxonomyOverlayCategories"		
+	ng-class	= "{'ic-hide' :!ic.overlays.show.taxonomyOverlayCategories}"		
 	class 		= "bg-0 center max" 
 	ic-expand 	= "'categories'"
 ></ic-taxonomy-overlay>
 
 
 <ic-taxonomy-overlay	
-	ng-if		= "ic.overlays.show['taxonomyOverlay_'+key]"		
+	ng-class	= "{'ic-hide': !ic.overlays.show['taxonomyOverlay_'+key]}"		
 	class 		= "bg-0 center max" 
 	ic-expand 	= "key"
 	ng-repeat	= "(key, tagGroup) in ic.taxonomy.tags"

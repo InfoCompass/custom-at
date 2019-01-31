@@ -109,6 +109,14 @@
 			'tigrinya',
 			'turkish',
 			'vietnamese',
+		],
+		sponsors:[
+			'tbb',
+			'esf',
+			'intlotsen',
+			'iq',
+			'jmd',
+			'mbe'
 		]
 	}
 

@@ -1,10 +1,15 @@
 <ul>
 	<li
 		ng-click 	= "ic.filterConfig.toggleSortOrder('alphabetical_'+ic.site.currentLanguage, true)" 
-		ng-class	= "{'checked': ic.site.sortOrder.match('alphabetical_'), 'icon left icon-interface-radio': ic.user.can('edit_items')}"
 		class 		= "block"
+		ng-if		= "ic.user.can('edit_items')"
 		ic-touch-me	
 	>
+		<span 
+			class 		= "icon left icon-interface-radio" 
+			ng-class	= "{'checked': ic.site.sortOrder.match('alphabetical_')}">
+		</span>
+
 		<span 
 		>
 			{{'INTERFACE.SORT_ALPHABETICALLY_%s'| fill : (ic.site.sortDirection == 1 ? 'ASC' : 'DESC') | translate}}
@@ -14,14 +19,18 @@
 	<li
 		ng-if		= "ic.user.can('edit_items')"
 		ng-click 	= "ic.filterConfig.toggleSortOrder('last_change', true)" 
-		ng-class	= "{'checked': ic.site.sortOrder == 'last_change'}"
-		class 		= "block icon left icon-interface-radio"
+		class 		= "block "
 		ic-touch-me	
 	>
-			<span 
-			>
-				{{'INTERFACE.SORT_LAST_CHANGE_%s'| fill : (ic.site.sortDirection == 1 ? 'ASC' : 'DESC') | translate}}
-			</span>
+		<span
+			class 		= "icon left icon-interface-radio"
+			ng-class	= "{'checked': ic.site.sortOrder == 'last_change'}"
+		>
+		</span>
+		<span 
+		>
+			{{'INTERFACE.SORT_LAST_CHANGE_%s'| fill : (ic.site.sortDirection == 1 ? 'ASC' : 'DESC') | translate}}
+		</span>
 	</li>
 </ul>
 

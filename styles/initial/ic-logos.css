@@ -2,17 +2,36 @@
 
 /* ic-text-logo */
 
+.ic-logo-full,
+ic-logo-full,
 .ic-text-logo,
+ic-logo-print,
 ic-logo-line,
 ic-logo-text {
-	display:						inline-block;
-	height:							1em;
-	width:							7.5em;
+	display:						inline-flex;
 	position:						relative;
-	background-image:				url(/images/large/logo-text-white.svg);
-	background-size:				contain;
-	background-repeat:				no-repeat;
-	background-position:			0 50%;
+	align-items:					center;
+}
+
+
+ic-logo-print > img,
+.ic-logo-full  > img,
+ic-logo-full  > img,
+.ic-text-logo > img,
+ic-logo-line > img,
+ic-logo-text > img {
+	object-fit:						contain;
+	height:							1em;
+	width:							1em;
+}
+
+.ic-text-logo > span,
+ic-logo-line > span,
+ic-logo-text > span {
+	display:						inline-block;
+	font-size:						0.4em;
+	line-height:					1.2;
+	margin-left:					1em;
 }
 
 
@@ -22,24 +41,34 @@ ic-logo-text {
 
 .ic-logo-full,
 ic-logo-full {
-	height:							2em;
-	width:							4em;
+	
+}
+
+.ic-logo-full  > span,
+ic-logo-full  > span {
 	display:						inline-block;
-	background-image:				url(/images/large/logo-full.svg);
-	background-size:				contain;
-	background-repeat:				no-repeat;
-	background-position:			0 50%;
+	font-size:						0.3em;
+	line-height:					1.1;
+	margin-left:					1em;
+	max-width:						10em;
 }
 
 
 /* ic-logo-print */
 
 ic-logo-print {
-	display:						inline-block;
-	height:							2em;
-	position:						relative;
+	color:							#000;
 }
 
-ic-logo-print img {
-	height:							2em;
+ic-logo-print > span {
+	display:						inline-block;
+	font-size:						0.3em;
+	line-height:					1.1;
+	margin-left:					1em;
+	max-width:						10em;
+}
+
+
+.print .sponsors {
+	
 }
