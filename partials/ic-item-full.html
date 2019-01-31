@@ -1,0 +1,327 @@
+<div class = "bg-0 spacer"></div>
+
+<ic-spinner active = "item.downloading"></ic-spinner>
+
+<div 
+	class 		= "hero-wrapper screen-only {{item.image ? 'bg-0'  : (item|icType) && 'disabled ic-bg-type-'+(item|icType).name || (item|icCategory) && 'disabled ic-bg-cat-'+(item|icCategory).name}} "
+>
+	<div
+		ng-if		="!item.image"
+		class		= "hero fallback white {{ (item | icType) && 'icon-type-'+(item | icType).name  || (item | icCategory) && 'icon-category-'+(item | icCategory).name}}" 
+	>
+	</div>
+	<div 
+		ng-if		= "item.image"
+		class		= "hero" 
+		ng-style	= "{'background-image' : 'url('+item.image+')'}" 
+	></div>
+</div> 
+
+
+<section class = "bg-0">
+
+	<div class = "type print-only">
+		<span ng-if = "(item | icType)">{{ 'TYPES.%s' | fill : (item | icType).name | translate }}</span>
+	</div>
+
+
+	<div class = "category print-only">
+		{{ 'CATEGORIES.%s' | fill :  (item | icCategory).name | translate }}
+		<div 
+			class	= "img print-only icon-category-{{ (item | icCategory).name}}"
+		></div>
+	</div>
+
+	<article 
+		class = "screen-only"
+		ng-if = "ic.user.can('edit_items')"
+	>		
+		<div> <!-- spacer --> </div>
+		<div>
+
+			<div ng-if = "item.creator">
+				{{'ITEMS.CREATOR' | translate}} 	 	{{item.creator 	}} 	({{item.creationDate | icDate}})
+			</div>
+			<div ng-if  ="item.lastEditor">
+				{{'ITEMS.LAST_EDITOR' | translate}}  	{{item.lastEditor	}}	({{item.lastEditDate | icDate}})
+			</div>	
+			<div ng-if = "ic.user.can('edit_items') && ic.languages.availableLanguages.length > (ic.languages.availableLanguages.indexOf('none') == -1 ? 1 :2)">
+				<a class = "active" ng-click ="ic.admin.autoTranslate(item)">{{'INTERFACE.AUTO_TRANSLATE'| translate }}</a>
+			</div>
+		</div>
+	</article>
+
+
+
+
+	<!-- tags -->
+
+
+	<article class = "screen-only">
+		<div ng-if = "ic.layout.mode.name != 'XS'"><!-- spacer --></div>
+		<ic-taxonomy-tag-list ic-tags = "item.tags"></ic-tag-list>
+	</article>
+
+
+
+	<!-- start item title, brief description -->
+	<article class = "main">
+		<div>
+			<ic-item-badge ic-item = "item"></ic-item-badge>
+		</div>
+
+		<div 
+			class 	= "xhcenter"
+			ng-if	= "ic.layout.mode.name == 'XS'"
+		>
+			<h2 class = "title" >
+				{{ item.title }} <span ng-if = "ic.user.can('edit_items')">[{{'ITEMS.STATE_%s' | fill: item.state | translate}}]</span>
+			</h2>
+			<h3>
+				{{ item.brief[ic.site.currentLanguage] }}
+			</h3>
+		</div>
+
+		<div>
+			<div 
+				class 	= "xjust"
+				ng-if	= "ic.layout.mode.name != 'XS'"
+			>
+				<h2 class = "title" >
+					{{ item.title }} <span ng-if = "ic.user.can('edit_items')">[{{'ITEMS.STATE_%s' | fill: item.state | translate}}]</span>
+				</h2>
+			</div>
+			<h3 ng-if	= "ic.layout.mode.name != 'XS'">
+				{{ item.brief[ic.site.currentLanguage] }}
+			</h3>
+
+			<div 
+				class 			= "screen-only description  highlight-links lang-{{ic.site.currentLanguage}}" 
+				ng-bind-html 	= "item.description[ic.site.currentLanguage] | trustAsHtml"
+			>
+			</div>
+
+			<div 
+				class 			= "print-only description highlight-links lang-{{ic.site.currentLanguage}}" 
+				ng-bind-html 	= " item.description[ic.site.currentLanguage]"
+			>
+			</div>
+
+		</div>
+	</article>
+	<!-- end item title -->
+
+
+
+
+
+	<!-- address -->
+
+	<ic-item-property
+		ng-if			= "item.address"
+		ic-title 		= "'ITEMS.ADDRESS' | translate"
+		ic-content		= "item.location"
+		ic-extra-lines	= "[item.address|| '-', (item.zip||'') + ' ' + (item.city||''), item.country ||'']"
+		ic-extra-links	= "{'Google Maps' : (item | gmLink), 'OpenStreetMap' : (item | osmLink)}"
+		ic-icon			= "'/images/icons/property-location.svg'"
+	>
+	</ic-item-property>
+
+
+
+	<!-- geo coordinates -->
+
+	<article>
+		<div ng-if = "ic.layout.mode.name != 'XS'"><!-- spacer --></div>
+		<ic-mini-map
+			class			= "screen-only"
+			ng-if			= "item.longitude && item.latitude"
+			ic-item			= "item"
+		>
+		</ic-mini-map>
+	</article>
+
+	<ic-item-property
+		class			= "screen-only"
+		ng-if			= "item.longitude && item.latitude && !item.address"
+		ic-title 		= "'ITEMS.GEO_COORDINATES' | translate"
+		ic-content		= "item.latitude + ', ' +item.longitude"
+		ic-icon			= "'/images/icons/property-location.svg'"
+		ic-extra-links	= "{'Google Maps' : GMLink, 'OpenStreetMap' : OSMLink}"
+	>
+	</ic-item-property>
+
+
+
+
+	<!-- misc -->
+
+	<ic-item-property
+		ng-repeat	= "key in ['contact', 'website', 'email', 'phone']"
+		ng-if		= "item[key]"
+		ic-title 	= "'ITEMS.%s' | fill : key | translate"
+		ic-content	= "item[key]"
+		ic-icon		= "'/images/icons/property-'+key+'.svg'"
+		ic-link		= "::key | icLinkPrefix"
+	>
+	</ic-item-property>
+
+
+	<ic-item-property
+		ng-repeat	= "key in ['facebook', 'twitter', 'whatsapp']"
+		ng-if		= "item[key]"
+		ic-title 	= "'ITEMS.%s' | fill : key | translate"
+		ic-content	= "item[key]"
+		ic-icon		= "'/images/icons/property-'+key+'.svg'"
+		ic-link		= "::key | icLinkPrefix"
+		class		= "screen-only"
+	>
+	</ic-item-property>
+
+	
+
+	<!-- hours -->
+
+	<ic-item-property
+		ng-if			= "item.hours[ic.site.currentLanguage]"
+		ic-title 		= "'ITEMS.HOURS' | translate"
+		ic-icon			= "'/images/icons/property-time.svg'"
+		ic-content		= "item.hours[ic.site.currentLanguage]"
+	>
+	</ic-item-property>
+	
+
+
+
+	<!-- sponsors -->
+
+	<article class = "sponsors screen-only">
+
+		<div> <!-- spacer --> </div>
+		<div>
+			<div class = "title">{{'ITEMS.SPONSORS' | translate }}</div>
+
+			<div class = "logos">
+				<img 
+					ng-repeat 	= "sponsor in item | icUnsortedTags : 'sponsors'"
+					title 		= "{{ 'UNSORTED_TAGS.%s' | fill : sponsor }}"
+					src 		= "{{'/images/large/LOGO_F_%s.png' | fill : sponsor }}" 
+				/>
+			</div>
+		</div> 
+	</article>
+
+
+
+
+
+
+
+
+	<div class = "qrcode">
+		<qrcode 
+			version					=	"4" 
+			error-correction-level	=	"M" 
+			size					=	"200" 
+			data					=	"{{item | icItemLink}}"
+			ng-if					=	"item"
+			ng-click				=	"ic.overlays.open('qrcode')"
+		>
+		</qrcode>
+	</div>
+
+
+
+
+
+</section>
+
+<footer class  = "print-only">
+	<div class = "logo">
+		<ic-logo-print></ic-logo-print>
+	</div>
+
+	<div class ="link-to-item print-only">
+		{{item | icItemLink}}
+	</div>
+
+</footer>
+
+
+<footer class = "screen-only">
+
+
+	<button 
+		class 		= "bg-0 active"
+		ng-if		= "true || ic.user.can('edit_items')"
+		ng-click 	= "ic.site.editItem = true" 
+		title		= "{{'INTERFACE.EDIT' | translate}}"
+		ic-touch-me
+	>
+
+		<span>
+			<span class 	="icon large icon-interface-edit active"></span>
+			{{'INTERFACE.EDIT' | translate}}
+		</span>
+
+	</button>
+
+
+
+	<button 
+		class		= "bg-0 active"
+		ng-click 	= "delete()" 
+		ng-if		= "ic.user.can('delete_items')"
+		title		= "{{'INTERFACE.DELETE' | translate}}"
+		ic-touch-me
+	>
+		<span>
+			<span class 	= "icon large icon-interface-delete active"></span>
+			{{'INTERFACE.DELETE' | translate}}
+		</span>
+	</button>
+		
+	<button 
+		class 		= "bg-0 active"
+		ng-click 	= "ic.overlays.toggle('sharingMenu')" 
+		title		= "{{'INTERFACE.SHARE' | translate}}"
+		ic-touch-me
+	>
+		<span>
+			<span class 	= "icon large icon-interface-share active"></span>
+			{{'INTERFACE.SHARE' | translate}}
+		</span>
+	</button>
+
+		
+	<button 
+		class 		= "bg-0 active"
+		ng-click	= "ic.site.print()"
+		title		= "{{'INTERFACE.PRINT' | translate}}"
+		ic-touch-me
+	> 
+		<span>
+			<span class ="icon large icon-interface-print active"></span>
+			{{'INTERFACE.PRINT' | translate}}
+		</span>
+
+	</button>
+
+	<button 
+		class 		= "bg-0 active"
+		title		= "{{'INTERFACE.FAVOURITE_%s' | fill : ic.favourites.contains(item) ? 'remove': 'add' | translate}}"
+		ng-click 	= "ic.favourites.toggleItem(item)" 
+		ic-touch-me
+	> 
+
+		<span>
+			<span 
+				class 		="icon large icon-interface-favourites active"
+				ng-class	= "{'icon-interface-favourites_remove': ic.favourites.contains(item), 'icon-interface-favourites': !ic.favourites.contains(item)}"
+			>
+			</span>
+			{{'INTERFACE.FAVOURITE_%s' | fill : ic.favourites.contains(item) ? 'remove': 'add' | translate}}
+		</span>
+	</button>
+
+</footer>
