@@ -4,6 +4,10 @@ ic-header .logo {
 	margin-left:				2rem;
 }
 
+ic-header .logo ic-logo-full {
+	font-size:					5rem;
+}
+
 ic-page header .search {
 	position:					absolute;
 	bottom:						0;
@@ -56,7 +60,6 @@ ic-taxonomy-overlay ul li {
 	display:					inline-flex !important;
 	align-items:				center;
 	justify-content:			start;
-	height:						3rem;
 	padding-left:				3rem;
 	padding-right:				0.5rem;
 	background-position:		0.75rem 50% !important;
@@ -111,4 +114,5 @@ ic-item-full .sponsors .logos > * {
 	width:						10rem;
 	margin:						0.5rem;
 }
+
 

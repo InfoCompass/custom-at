@@ -109,14 +109,36 @@
 			'tigrinya',
 			'turkish',
 			'vietnamese',
+			'misc_language'
 		],
 		sponsors:[
-			'tbb',
-			'esf',
-			'intlotsen',
+			'senias',
+			'senaif',
+			'senjva',
+			'sengpg',
+			'bmfsfj',
+			'bmas',
+			'bmibh',
+			'ehap',
+			'eu',
+			'esd', 
 			'iq',
+			'lads', 
+			'bpui', 
+			'esf',
+			'bamh',
+			'batk',
+			'balb',
+			'bzpk',
+			'kjs',
+			'perspektywy',
+			'lb',
+			'lsb',
+			'tbb',
+			'inlo',
 			'jmd',
-			'mbe'
+			'mbe',
+			'brd'
 		]
 	}
 

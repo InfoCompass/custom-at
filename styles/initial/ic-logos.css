@@ -11,6 +11,7 @@ ic-logo-text {
 	display:						inline-flex;
 	position:						relative;
 	align-items:					center;
+	height:							1em;
 }
 
 
@@ -21,8 +22,8 @@ ic-logo-full  > img,
 ic-logo-line > img,
 ic-logo-text > img {
 	object-fit:						contain;
-	height:							1em;
-	width:							1em;
+	height:							0.9em;
+	width:							0.9em;
 }
 
 .ic-text-logo > span,
@@ -50,7 +51,6 @@ ic-logo-full  > span {
 	font-size:						0.3em;
 	line-height:					1.1;
 	margin-left:					1em;
-	max-width:						10em;
 }
 
 
@@ -70,5 +70,5 @@ ic-logo-print > span {
 
 
 .print .sponsors {
-	
+
 }
