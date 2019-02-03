@@ -1,32 +1,10 @@
 (function(exports){
 
 
-
-
 	exports.categories = [
 		{
-			name:	'health',
-			colors:	['#53C294'],
-			tags: 	[]
-		},
-		{
-			name:	'support',
-			colors:	['#B2C060'],
-			tags: 	[]
-		},
-		{
-			name:	'discrimination',
-			colors:	['#D69255'],
-			tags: 	[]
-		},
-		{
-			name:	'violence',
-			colors:	['#F4504F'],
-			tags: 	[]
-		},
-		{
-			name:	'migration_counseling',
-			colors:	['#DEA0CA'],
+			name:	'accomodation',
+			colors:	['#FA9A20'],
 			tags: 	[]
 		},
 		{
@@ -35,14 +13,19 @@
 			tags:	[],
 		},
 		{
-			name:	'labour',
-			colors:	['#438eba'],
+			name:	'asylum_counseling',
+			colors:	['#66B2FF'],
 			tags: 	[]
 		},
 		{
-			name:	'accomodation',
-			colors:	['#FA9A20'],
-			tags: 	[]
+			name:	'care',
+			colors:	['#999'],
+			tags:	[]
+		},
+		{
+			name:	'debt',
+			colors:	['#999'],
+			tags:	[]
 		},
 		{
 			name:	'disability',
@@ -50,15 +33,77 @@
 			tags:	[]
 		},
 		{
-			name:	'asylum_counseling',
-			colors:	['#66B2FF'],
+			name:	'discrimination',
+			colors:	['#D69255'],
 			tags: 	[]
 		},
+		{
+			name:	'family_conflicts',
+			colors:	['#999'],
+			tags: 	[]
+		},
+		{
+			name:	'felony',
+			colors:	['#999'],
+			tags: 	[]
+		},
+		{
+			name:	'health',
+			colors:	['#53C294'],
+			tags: 	[]
+		},
+		{
+			name:	'labour',
+			colors:	['#438eba'],
+			tags: 	[]
+		},
+		{
+			name:	'migration_counseling',
+			colors:	['#DEA0CA'],
+			tags: 	[]
+		},
+		{
+			name:	'mental_health',
+			colors:	['#999'],
+			tags: 	[]
+		},
+		{
+			name:	'pregnancy',
+			colors:	['#999'],
+			tags: 	[]
+		},
+		{
+			name:	'sex_work',
+			colors:	['#999'],
+			tags: 	[]
+		},
+		{
+			name:	'sti',
+			colors:	['#999'],
+			tags: 	[]
+		},
+		{
+			name:	'sport',
+			colors:	['#B2C060'],
+			tags: 	[]
+		},
+		{
+			name:	'support',
+			colors:	['#B2C060'],
+			tags: 	[]
+		},
+		{
+			name:	'violence',
+			colors:	['#F4504F'],
+			tags: 	[]
+		},
+
+
 		{
 			name:	'misc_category',
 			colors:	['#66B2FF'],
 			tags: 	[]
-		},
+		}
 	]
 
 	exports.types = []

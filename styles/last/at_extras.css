@@ -38,9 +38,16 @@ ic-taxonomy-overlay {
 ic-taxonomy-overlay h2 {
 	display:					block;
 	margin:						0 auto;
-	margin-bottom:				2rem;
+	margin-bottom:				1rem;
 	text-align:					center;
 }
+
+
+ic-taxonomy-overlay h2 + input {
+	margin:						1rem auto;
+	width:						18rem !important;
+}
+
 
 ic-taxonomy-overlay ul {
 	display:					flex;
@@ -62,7 +69,15 @@ ic-taxonomy-overlay ul li {
 	justify-content:			start;
 	padding-left:				3rem;
 	padding-right:				0.5rem;
+	padding-top:				0.5rem;
+	padding-bottom:				0.5rem;
 	background-position:		0.75rem 50% !important;
+	margin-bottom:				0.25rem !important;
+}
+
+
+ic-taxonomy-overlay ul li:first-child{
+	flex:						0 1 100%;
 }
 
 ic-taxonomy-overlay ul .types li.disabled {
