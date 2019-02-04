@@ -195,7 +195,10 @@
 
 	<!-- sponsors -->
 
-	<article class = "sponsors screen-only">
+	<article 
+		class 	= "sponsors screen-only"
+		ng-if	= "(item | icUnsortedTags : 'sponsors').length > 0" 
+	>
 
 		<div> <!-- spacer --> </div>
 		<div>
@@ -204,7 +207,7 @@
 			<div class = "logos">
 				<img 
 					ng-repeat 	= "sponsor in item | icUnsortedTags : 'sponsors'"
-					title 		= "{{ 'UNSORTED_TAGS.%s' | fill : sponsor }}"
+					title 		= "{{ 'UNSORTED_TAGS.%s' | fill : sponsor | translate }}"
 					src 		= "{{'/images/large/LOGO_F_%s.png' | fill : sponsor }}" 
 				/>
 			</div>

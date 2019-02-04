@@ -17,16 +17,16 @@
 			colors:	['#66B2FF'],
 			tags: 	[]
 		},
-		{
-			name:	'care',
-			colors:	['#999'],
-			tags:	[]
-		},
-		{
-			name:	'debt',
-			colors:	['#999'],
-			tags:	[]
-		},
+		// {
+		// 	name:	'care',
+		// 	colors:	['#999'],
+		// 	tags:	[]
+		// },
+		// {
+		// 	name:	'debt',
+		// 	colors:	['#999'],
+		// 	tags:	[]
+		// },
 		{
 			name:	'disability',
 			colors:	['#BC8BD8'],
@@ -37,16 +37,16 @@
 			colors:	['#D69255'],
 			tags: 	[]
 		},
-		{
-			name:	'family_conflicts',
-			colors:	['#999'],
-			tags: 	[]
-		},
-		{
-			name:	'felony',
-			colors:	['#999'],
-			tags: 	[]
-		},
+		// {
+		// 	name:	'family_conflicts',
+		// 	colors:	['#999'],
+		// 	tags: 	[]
+		// },
+		// {
+		// 	name:	'felony',
+		// 	colors:	['#999'],
+		// 	tags: 	[]
+		// },
 		{
 			name:	'health',
 			colors:	['#53C294'],
@@ -62,31 +62,31 @@
 			colors:	['#DEA0CA'],
 			tags: 	[]
 		},
-		{
-			name:	'mental_health',
-			colors:	['#999'],
-			tags: 	[]
-		},
-		{
-			name:	'pregnancy',
-			colors:	['#999'],
-			tags: 	[]
-		},
-		{
-			name:	'sex_work',
-			colors:	['#999'],
-			tags: 	[]
-		},
-		{
-			name:	'sti',
-			colors:	['#999'],
-			tags: 	[]
-		},
-		{
-			name:	'sport',
-			colors:	['#B2C060'],
-			tags: 	[]
-		},
+		// {
+		// 	name:	'mental_health',
+		// 	colors:	['#999'],
+		// 	tags: 	[]
+		// },
+		// {
+		// 	name:	'pregnancy',
+		// 	colors:	['#999'],
+		// 	tags: 	[]
+		// },
+		// {
+		// 	name:	'sex_work',
+		// 	colors:	['#999'],
+		// 	tags: 	[]
+		// },
+		// {
+		// 	name:	'sti',
+		// 	colors:	['#999'],
+		// 	tags: 	[]
+		// },
+		// {
+		// 	name:	'sport',
+		// 	colors:	['#999'],
+		// 	tags: 	[]
+		// },
 		{
 			name:	'support',
 			colors:	['#B2C060'],
@@ -101,9 +101,10 @@
 
 		{
 			name:	'misc_category',
-			colors:	['#66B2FF'],
-			tags: 	[]
+			colors:	['#9CAEC2'],
+			tags: 	['care', 'debt', 'family_conflicts', 'felony', 'mental_health', 'pregnancy', 'sex_work', 'sport', 'sti', ]
 		}
+
 	]
 
 	exports.types = []
@@ -133,28 +134,61 @@
 			'lichtenberg',
 			'reinickendorf'
 		],
+
 		languages: [
+			'albanian',
+			'amharic',
+			'aramaic',
 			'arabic',
+			'armenian',
+			'azerbaijani',
+			'bengali',
 			'bulgarian',
-			'bosanski',
+			'chechen',
+			'chinese',
+			'creole',
 			'dari',
+			'dutch',
 			'english',
 			'farsi',
 			'french',
 			'greek',
+			'hebrew',
+			'hindu',
+			'hungarian',
 			'italian',
+			'japanese',
+			'kikuyu',
+			'korean',
 			'kurdish',
+			'laz',
+			'lithuanian',
+			'luo',
+			'macedonian',
+			'montenegrin',
+			'nepali',
+			'oromo',
 			'pashto',
 			'polish',
+			'portuguese',
+			'punjabi',
 			'romani',
 			'romanian',
 			'russian',
 			'serbian_croatian',
 			'spanish',
+			'suomi',
+			'swahili',
+			'tajiki',
+			'thai',
 			'tigrinya',
 			'turkish',
+			'turkmen',
+			'ukranian',
+			'urdu',
+			'uzbek',
 			'vietnamese',
-			'misc_language'
+			'wolof',
 		],
 		sponsors:[
 			'senias',

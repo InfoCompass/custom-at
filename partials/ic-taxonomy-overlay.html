@@ -27,7 +27,7 @@
 	</li>
 
 	<li
-		ng-repeat 	= "category in ic.taxonomy.categories"
+		ng-repeat 	= "category in ic.taxonomy.categories | orderBy : ic.utils.evalItems('item.name == \'misc_category\' ? null : (\'CATEGORIES.%s\' | fill : item.name | translate)')"
 		ng-if		= "!filter || ('CATEGORIES.%s' | fill : category.name | translate | match : filter[icExpand])"
 		class		= "icon icon-category-{{::category.name}} bg-0"
 		ic-button	= "{active:ic.filterConfig.categoryActive(category.name), disabled: !ic.itemStorage.currentStats.altMatches[category.name]}"
@@ -71,7 +71,7 @@
 			<a>{{'INTERFACE.FILTER_ANY' |translate}}</a>
 		</li>
 		<li
-			ng-repeat 	= "tag in tagGroup"
+			ng-repeat 	= "tag in tagGroup | orderBy : ic.utils.evalItems('(\'UNSORTED_TAGS.%s\' | fill : item | translate)')"
 			ng-if		= "!filter || ('UNSORTED_TAGS.%s' | fill : tag | translate | match : filter[icExpand])"
 			class		= "icon icon-interface-checkbox"
 			ic-button	= "{active:ic.filterConfig.unsortedTagActive(tag), checked:ic.filterConfig.unsortedTagActive(tag), disabled: !ic.itemStorage.currentStats.subMatches[tag]}"
