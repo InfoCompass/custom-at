@@ -175,6 +175,7 @@
 			'romani',
 			'romanian',
 			'russian',
+			'slovene',
 			'serbian_croatian',
 			'spanish',
 			'suomi',
