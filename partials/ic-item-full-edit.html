@@ -318,6 +318,24 @@
 		</div>
 	</article>
 
+
+	<!-- hours -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.HOURS' | translate}} ({{'LANGUAGES.%s' | fill: ic.site.currentLanguage | translate}})</h4>
+			
+			<ic-help ic-message = "ITEMS.HOURS_HELP"></ic-help>
+			
+
+			<ic-item-property-edit
+				ic-item					= "icItem"
+				ic-key					= "hours"
+				ic-type 				= "text"
+				ic-translatable			= "true"
+			></ic-item-property-edit>
+		</div>
+	</article>
 	
 
 

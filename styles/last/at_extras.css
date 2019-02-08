@@ -131,3 +131,29 @@ ic-item-full .sponsors .logos > * {
 }
 
 
+
+
+
+ic-page #sponsors {
+	display:					flex;
+	flex-wrap:					wrap;
+}
+
+ic-page #sponsors > * {
+	flex:						1 0 20rem;
+}
+
+ic-page #sponsors > * .logos {
+	display:					flex;
+}
+
+ic-page #sponsors > * .logos > * {
+	flex:						0 1 10rem;
+	height:						8rem;
+	width:						10rem;
+	background-size:			contain;
+	background-repeat:			no-repeat;
+	margin-left:				1rem;
+	margin-bottom:				1rem;
+}
+

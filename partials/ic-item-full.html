@@ -204,13 +204,17 @@
 		<div>
 			<div class = "title">{{'ITEMS.SPONSORS' | translate }}</div>
 
-			<div class = "logos">
+			<div
+				ng-repeat 	= "sponsor in item | icUnsortedTags : 'sponsors'"
+			>{{ 'UNSORTED_TAGS.%s' | fill : sponsor | translate }}</div>
+
+			<!-- <div class = "logos">
 				<img 
 					ng-repeat 	= "sponsor in item | icUnsortedTags : 'sponsors'"
 					title 		= "{{ 'UNSORTED_TAGS.%s' | fill : sponsor | translate }}"
 					src 		= "{{'/images/large/LOGO_F_%s.png' | fill : sponsor }}" 
 				/>
-			</div>
+			</div> -->
 		</div> 
 	</article>
 
