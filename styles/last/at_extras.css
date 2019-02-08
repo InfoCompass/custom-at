@@ -155,6 +155,7 @@ ic-page #sponsors > * .logos > * {
 	width:						16rem;
 	background-size:			contain;
 	background-repeat:			no-repeat;
+	background-position:		50% 50%;
 	margin-left:				1rem;
 	margin-bottom:				1rem;
 }
