@@ -137,6 +137,7 @@ ic-item-full .sponsors .logos > * {
 ic-page #sponsors {
 	display:					flex;
 	flex-wrap:					wrap;
+	justify-content: 			space-between;
 }
 
 ic-page #sponsors > * {
@@ -146,14 +147,15 @@ ic-page #sponsors > * {
 ic-page #sponsors > * .logos {
 	display:					flex;
 	align-items:				center;
+	flex-wrap:					wrap;
 }
 
 ic-page #sponsors > * .logos > * {
-	flex:						1 1 10rem;
+	flex:						1 1 16rem;
 	height:						8rem;
 	background-size:			contain;
 	background-repeat:			no-repeat;
-	background-position:		50% 50%;
+	background-position:		0% 50%;
 	margin-right:				1rem;
 	margin-bottom:				1rem;
 }
