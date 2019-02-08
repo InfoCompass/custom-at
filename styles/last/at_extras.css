@@ -146,7 +146,6 @@ ic-page #sponsors > * {
 ic-page #sponsors > * .logos {
 	display:					flex;
 	align-items:				center;
-	justify-content: 			center;
 }
 
 ic-page #sponsors > * .logos > * {
@@ -156,7 +155,7 @@ ic-page #sponsors > * .logos > * {
 	background-size:			contain;
 	background-repeat:			no-repeat;
 	background-position:		50% 50%;
-	margin-left:				1rem;
+	margin-right:				1rem;
 	margin-bottom:				1rem;
 }
 
