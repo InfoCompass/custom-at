@@ -1,14 +1,14 @@
 {
-	"xbackendLocation": "https://api.info-compass.net",
-	"xbackendLocation":	"http://127.0.0.1:2410",
+	"xbackendLocation":	"api.beratungsnetz-migration.de",
+	"xstatsLocation":	"stats.beratungsnetz-migration.de",
 	"backendLocation":	"http://78.46.152.176:8071",
-	"statsLocation":	"https://78.46.152.176:8072",
+	"statsLocation":	"http://78.46.152.176:8072",
 	"block":			"",
 	"title":			"Berliner Fachberatung für Zugewanderte",
 	"languages":		["de", "none"],
 	"activeIconColor":	"#659FD8",
 	"plainIconColor":	"#666666",
-	"pages":			["home", "tags", "about", "legal", "contact", "tiles", "emergency"],
+	"pages":			["home", "tags", "about", "legal", "contact", "tiles", "emergency", "manual"],
 	"map":{
 		"center":			[52.518611,13.408333],
 		"zoom":				10,
