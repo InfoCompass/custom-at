@@ -190,7 +190,14 @@
 	>
 	</ic-item-property>
 	
+	<!-- remarks -->
 
+	<ic-item-property
+		ng-if			= "item.remarks[ic.site.currentLanguage]"
+		ic-title 		= "'ITEMS.REMARKS' | translate"
+		ic-content		= "item.remarks[ic.site.currentLanguage]"
+	>
+	</ic-item-property>
 
 
 	<!-- sponsors -->
