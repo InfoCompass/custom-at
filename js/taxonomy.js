@@ -191,7 +191,46 @@
 			'vietnamese',
 			'wolof',
 		],
+
+
+		
+
+
 		sponsors:[
+			'senias_partin',
+			'senias_akrom',
+			'senias_intlot',
+			'senias_msd',
+			'senias_mifl',
+			'bamf_mbe',
+			'bamf_jmd',
+			'iq',
+			'senjustva',
+			'sengpg',
+			'ba_charlottenburg_wilmersdorf',
+			'ba_friedrichshain_kreuzberg',
+			'ba_lichtenberg',
+			'ba_marzahn_hellersdorf',
+			'ba_mitte',
+			'ba_neukölln',
+			'ba_pankow',
+			'ba_reinickendorf',
+			'ba_spandau',
+			'ba_steglitz_zehlendorf',
+			'ba_tempelhof_schoeneberg',
+			'ba_treptow_koepenik',
+			'bmfsfj',
+			'bmas',
+			'bmi',
+			'ehap',
+			'esf',
+			'lotto',
+			'aktion_mensch',
+
+
+
+
+
 			'senias',
 			'senaif',
 			'senjva',
