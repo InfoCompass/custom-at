@@ -100,6 +100,24 @@
 	</article>
 
 
+	<!-- remarks -->
+	<article>
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'ITEMS.REMARKS' | translate}} ({{'LANGUAGES.%s' | fill: ic.site.currentLanguage | translate}})</h4>
+			
+			<ic-help ic-message = "ITEMS.REMARKS_HELP"></ic-help>
+			
+
+			<ic-item-property-edit
+				ic-item					= "icItem"
+				ic-key					= "remarks"
+				ic-type 				= "text"
+				ic-translatable			= "true"
+			></ic-item-property-edit>
+		</div>
+	</article>
+
 
 	<!-- image -->
 	<article>
@@ -338,23 +356,7 @@
 	</article>
 
 
-	<!-- remarks -->
-	<article>
-		<div> <!-- spacer --> </div>
-		<div>
-			<h4> {{'ITEMS.REMARKS' | translate}} ({{'LANGUAGES.%s' | fill: ic.site.currentLanguage | translate}})</h4>
-			
-			<ic-help ic-message = "ITEMS.REMARKS_HELP"></ic-help>
-			
-
-			<ic-item-property-edit
-				ic-item					= "icItem"
-				ic-key					= "remarks"
-				ic-type 				= "text"
-				ic-translatable			= "true"
-			></ic-item-property-edit>
-		</div>
-	</article>
+	
 	
 
 

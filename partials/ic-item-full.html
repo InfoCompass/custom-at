@@ -58,7 +58,7 @@
 
 
 	<article class = "screen-only">
-		<div ng-if = "ic.layout.mode.name != 'XS'"><!-- spacer --></div>
+		<div><!-- spacer --></div>
 		<ic-taxonomy-tag-list ic-tags = "item.tags"></ic-tag-list>
 	</article>
 
@@ -112,7 +112,15 @@
 	<!-- end item title -->
 
 
+	<!-- remarks -->
 
+	<ic-item-property
+		ng-if			= "item.remarks[ic.site.currentLanguage]"
+		ic-title 		= "'ITEMS.REMARKS' | translate"
+		ic-content		= "item.remarks[ic.site.currentLanguage]"
+		ic-icon			= "'/images/icons/property-responsible.svg'"
+	>
+	</ic-item-property>
 
 
 	<!-- address -->
@@ -190,14 +198,7 @@
 	>
 	</ic-item-property>
 	
-	<!-- remarks -->
 
-	<ic-item-property
-		ng-if			= "item.remarks[ic.site.currentLanguage]"
-		ic-title 		= "'ITEMS.REMARKS' | translate"
-		ic-content		= "item.remarks[ic.site.currentLanguage]"
-	>
-	</ic-item-property>
 
 
 	<!-- sponsors -->

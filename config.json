@@ -2,7 +2,7 @@
 	"backendLocation":	"https://api.beratungsnetz-migration.de",
 	"statsLocation":	"https://stats.beratungsnetz-migration.de",
 	"block":			"",
-	"title":			"Berliner Fachberatung für Zugewanderte",
+	"title":			"Berliner Beratungsnetz für Zugewanderte",
 	"languages":		["de", "none"],
 	"activeIconColor":	"#659FD8",
 	"plainIconColor":	"#666666",
