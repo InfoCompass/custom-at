@@ -234,11 +234,8 @@
 			'senias',
 			'senaif',
 			'senjva',
-			'sengpg',
-			'bmfsfj',
 			'bmas',
 			'bmibh',
-			'ehap',
 			'eu',
 			'esd', 
 			'iq',
@@ -256,7 +253,6 @@
 			'tbb',
 			'inlo',
 			'jmd',
-			'mbe',
 			'brd'
 		]
 	}
