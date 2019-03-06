@@ -6,16 +6,6 @@
 			ic-button-label = "ic.layout.mode.name != 'XS' ? ('INTERFACE.SEARCH' | translate) : true"
 		>
 		</ic-search>
-		<div class = "types">
-			<a 
-				ng-repeat 	= "type in ic.taxonomy.types"
-				ng-href		= "/list/t/{{type.name}}"
-				class 		= "icon left normal icon-type-{{type.name}} active"
-				ic-touch-me
-			>
-				{{'TYPES.%s' | fill : type.name | translate}}
-			</a>
-		</div>
 	</article>
 </header>	
 

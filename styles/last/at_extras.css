@@ -8,6 +8,10 @@ ic-header .logo ic-logo-full {
 	font-size:					5rem;
 }
 
+ic-page header {
+	height:						7rem;
+}
+
 ic-page header .search {
 	position:					absolute;
 	bottom:						0;
