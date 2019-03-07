@@ -228,11 +228,6 @@
 			'lotto',
 			'aktion_mensch',
 
-
-
-
-
-			'senias',
 			'senaif',
 			'senjva',
 			'bmibh',
