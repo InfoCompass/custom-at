@@ -202,6 +202,7 @@
 			'senias_intlot',
 			'senias_msd',
 			'senias_mifl',
+			'senias',
 			'bamf_mbe',
 			'bamf_jmd',
 			'iq',
