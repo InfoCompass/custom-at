@@ -226,27 +226,7 @@
 			'ehap',
 			'esf',
 			'lotto',
-			'aktion_mensch',
-
-			'senaif',
-			'senjva',
-			'bmibh',
-			'eu',
-			'esd', 
-			'lads', 
-			'bpui', 
-			'bamh',
-			'batk',
-			'balb',
-			'bzpk',
-			'kjs',
-			'perspektywy',
-			'lb',
-			'lsb',
-			'tbb',
-			'inlo',
-			'jmd',
-			'brd'
+			'aktion_mensch'
 		]
 	}
 

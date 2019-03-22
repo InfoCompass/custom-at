@@ -2,7 +2,6 @@
 	<li
 		ng-click 	= "ic.filterConfig.toggleSortOrder('alphabetical_'+ic.site.currentLanguage, true)" 
 		class 		= "block"
-		ng-if		= "ic.user.can('edit_items')"
 		ic-touch-me	
 	>
 		<span 
@@ -17,7 +16,6 @@
 	</li>
 
 	<li
-		ng-if		= "ic.user.can('edit_items')"
 		ng-click 	= "ic.filterConfig.toggleSortOrder('last_change', true)" 
 		class 		= "block "
 		ic-touch-me	

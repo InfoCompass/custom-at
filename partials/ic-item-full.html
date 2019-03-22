@@ -319,6 +319,7 @@
 		class 		= "bg-0 active"
 		title		= "{{'INTERFACE.FAVOURITE_%s' | fill : ic.favourites.contains(item) ? 'remove': 'add' | translate}}"
 		ng-click 	= "ic.favourites.toggleItem(item)" 
+		ng-if		= "!ic.user.can('edit_items')"
 		ic-touch-me
 	> 
 
