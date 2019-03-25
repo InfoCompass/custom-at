@@ -217,7 +217,7 @@
 			<div class = "title">{{'ITEMS.SPONSORS' | translate }}</div>
 
 			<a
-				class		= "ic-tag no-clip"
+				class		= "active block"
 				ng-repeat 	= "sponsor in item | icUnsortedTags : 'sponsors'"				
 				ng-href		= "/list/u/{{::sponsor}}"
 			>
@@ -276,15 +276,14 @@
 
 	<button 
 		class 		= "bg-0 active"
-		ng-if		= "true || ic.user.can('edit_items')"
 		ng-click 	= "ic.site.editItem = true" 
-		title		= "{{'INTERFACE.EDIT' | translate}}"
+		title		= "{{ic.user.can('edit_items') ? 'INTERFACE.EDIT' : 'INTERFACE.EDIT_SUGGESTION' | translate}}"
 		ic-touch-me
 	>
 
 		<span>
 			<span class 	="icon large icon-interface-edit active"></span>
-			{{'INTERFACE.EDIT' | translate}}
+			{{ic.user.can('edit_items') ? 'INTERFACE.EDIT' : 'INTERFACE.EDIT_SUGGESTION' | translate}}
 		</span>
 
 	</button>
