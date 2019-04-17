@@ -76,7 +76,7 @@
 			<li 
 				ng-repeat 	= "page in ic.config.pages"
 				class 		= "bg-0 hover" 
-				ng-if 		= "['home', 'tiles', 'tags', 'emergency', 'sponsors'].indexOf(page) == -1"
+				ng-if 		= "['home', 'tiles', 'tags', 'emergency'].indexOf(page) == -1"
 			> 
 				<a ic-touch-me a ng-href="/p/{{page}}">	{{'INTERFACE.%s' | fill : page| translate}}</a>	
 			</li>
