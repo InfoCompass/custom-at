@@ -6,7 +6,7 @@
 	"languages":		["de", "none"],
 	"activeIconColor":	"#659FD8",
 	"plainIconColor":	"#666666",
-	"pages":			["home", "tags", "about", "legal", "contact", "tiles", "emergency", "manual", "sponsors"],
+	"pages":			["home", "tags", "about", "legal", "contact", "tiles", "emergency", "manual"],
 	"map":{
 		"center":			[52.518611,13.408333],
 		"zoom":				10,
@@ -20,6 +20,8 @@
 		"twitter": {
 			"hashtag": "test"
 		},
+		"facebook": true,
+		"whatsapp": true,
 		"email": true
 	}
 }

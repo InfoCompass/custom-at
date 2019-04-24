@@ -10,6 +10,8 @@ ic-header .logo ic-logo-full {
 
 ic-page header {
 	height:						7rem;
+	background-image:			none !important;
+	background-color:			#CACACA;
 }
 
 ic-page header .search {
