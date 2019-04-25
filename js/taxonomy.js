@@ -59,7 +59,7 @@
 		},
 		{
 			name:	'migration_counseling',
-			colors:	['#DEA0CA'],
+			colors:	['#E25C56'],
 			tags: 	[]
 		},
 		// {
@@ -89,12 +89,12 @@
 		// },
 		{
 			name:	'support',
-			colors:	['#B2C060'],
+			colors:	['#9FC060'],
 			tags: 	[]
 		},
 		{
 			name:	'violence',
-			colors:	['#F4504F'],
+			colors:	['#DBC10C'],
 			tags: 	[]
 		},
 
