@@ -8,6 +8,10 @@ ic-header .logo ic-logo-full {
 	font-size:					5rem;
 }
 
+ic-page p {
+	line-height:				1.85em;
+}
+
 ic-page header {
 	height:						7rem;
 	background-image:			none !important;
@@ -20,6 +24,10 @@ ic-page header .search {
 	background:					transparent;
 	left:						0;
 	right:						0;
+}
+
+ic-page .no-space{
+	margin-bottom:				0;
 }
 
 ic-search form {
@@ -177,3 +185,9 @@ ic-page #sponsors > * .logos > * {
 	flex-wrap:					wrap;
 }
 
+.boxed {
+	font-size:					1em !important;
+	font-weight:				600 !important;
+	line-height:				1em;
+	padding:					0.5em 1rem;
+}
