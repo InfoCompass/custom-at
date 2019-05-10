@@ -63,7 +63,7 @@
 
 
 .bg-3 {
-	background-color:			#629bd2;
+	background-color:			#659FD8;
 	color:						#fff;
 }
 
@@ -74,7 +74,7 @@
 
 
 .border-3 {
-	box-shadow:					0 0 0 0.1rem #629bd2 inset;
+	box-shadow:					0 0 0 0.1rem #659FD8 inset;
 }
 
 
@@ -109,7 +109,7 @@
 }
 
 .col-3 {
-	color:						#629bd2 !important;
+	color:						#659FD8 !important;
 }
 
 .active {
