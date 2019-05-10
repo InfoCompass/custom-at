@@ -35,6 +35,10 @@ ic-page .no-space{
 	padding-bottom:				0;
 }
 
+ic-page ic-search {
+	max-width:					45em;
+}
+
 ic-search form {
 	background:					transparent;
 }
@@ -191,8 +195,9 @@ ic-page #sponsors > * .logos > * {
 }
 
 .boxed {
-	font-size:					1em !important;
+	font-size:					0.9em !important;
 	font-weight:				600 !important;
-	line-height:				1em;
-	padding:					0.5em 1rem;
+	line-height:				1em !important;
+	border-width:				0.1em !important;
+	padding:					0.5em 1rem !important;
 }
