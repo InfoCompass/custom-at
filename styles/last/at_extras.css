@@ -180,7 +180,7 @@ ic-page #sponsors > * .logos {
 
 ic-page #sponsors > * .logos > * {
 	flex:						1 0 0;
-	height:						7rem;
+	height:						12rem;
 	width:						16rem;
 	background-size:			contain;
 	background-repeat:			no-repeat;
