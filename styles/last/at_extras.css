@@ -198,6 +198,6 @@ ic-page #sponsors > * .logos > * {
 	font-size:					0.9em !important;
 	font-weight:				600 !important;
 	line-height:				1em !important;
-	border-width:				0.1em !important;
+	border-width:				1px !important;
 	padding:					1em 2rem !important;
 }
