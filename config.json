@@ -1,7 +1,7 @@
 {
 	"backendLocation":	"https://api.beratungsnetz-migration.de",
 	"statsLocation":	"https://stats.beratungsnetz-migration.de",
-	"frontendLocation": "https://www.beratungsnetz-migration.de",
+	"frontendLocation": "https://beratungsnetz-migration.de",
 	"block":			"",
 	"title":			"Berliner Beratungsnetz für Zugewanderte",
 	"languages":		["de", "none"],
