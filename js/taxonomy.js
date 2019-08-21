@@ -102,7 +102,7 @@
 		{
 			name:	'misc_category',
 			colors:	['#9CAEC2'],
-			tags: 	['care', 'debt', 'family_conflicts', 'felony', 'mental_health', 'pregnancy', 'sex_work', 'sport', 'sti', ]
+			tags: 	['care', 'debt', 'family_conflicts', 'felony', 'mental_health', 'pregnancy', 'sex_work', 'sport', 'sti',  'benn']
 		}
 
 	]
