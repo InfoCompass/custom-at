@@ -118,7 +118,8 @@
 			'no_health_ensurance',
 			'houseless',
 			'lgbtiq',
-			'misc_target'
+			'misc_target',
+			'elderly'
 		],	
 		districts: [
 			'mitte',
