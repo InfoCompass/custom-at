@@ -128,6 +128,23 @@ ic-taxonomy-overlay ul li .bubble {
 
 
 
+ic-survey-popup button {
+	position:					absolute !important;
+	top:						0.5rem !important;
+	right:						0.5rem !important;
+}
+
+ic-survey-popup {
+	padding:					1rem 3rem !important;
+}
+
+ic-survey-popup > div {
+	margin:						0;
+	width:						auto;
+}
+
+
+
 
 ic-item-full .sponsors {
 	margin-top:					2rem;
