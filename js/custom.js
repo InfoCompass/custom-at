@@ -53,8 +53,6 @@ angular.module('icDirectives')
 			link: function(scope, element, attrs){
 				scope.ic = ic
 
-				console.log('linking one time popup', scope.icPopupId, scope.icPopupMessage)
-
 				if(!scope.icPopupId){
 					console.warn('icOneTimePopup: missing icPopupId')
 					return null
@@ -68,10 +66,11 @@ angular.module('icDirectives')
 				if(seen && seen[scope.icPopupId]) return true
 
 				ic.overlays.open(scope.icPopupName, scope.icPopupMessage || undefined)
-				
-				seen[scope.icPopupId] = true
+				.finally(function(){
+					seen[scope.icPopupId] = true
 
-				localStorage.setItem('seenOneTimePopups', JSON.stringify(seen))
+					localStorage.setItem('seenOneTimePopups', JSON.stringify(seen))
+				})
 			}
 		}
 	}
