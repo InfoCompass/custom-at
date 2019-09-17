@@ -68,12 +68,10 @@ angular.module('icDirectives')
 				if(seen && seen[scope.icPopupId]) return true
 
 				ic.overlays.open(scope.icPopupName, scope.icPopupMessage || undefined)
-				.finally(function(){
-					console.log('test: overlay read', scope.icPopupId)
-					seen[scope.icPopupId] = true
+				
+				seen[scope.icPopupId] = true
 
-					localStorage.setItem('seenOneTimePopups', JSON.stringify(seen))
-				})
+				localStorage.setItem('seenOneTimePopups', JSON.stringify(seen))
 			}
 		}
 	}
