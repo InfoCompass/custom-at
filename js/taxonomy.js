@@ -194,7 +194,6 @@
 		],
 
 
-
 		sponsors:[
 			'senias',
 			'senias_partin',
@@ -204,6 +203,8 @@
 			'senias_mifl',
 			'bamf_mbe',
 			'bamf_jmd',
+			'bzga',
+			'amif',
 			'iq',
 			'senjustva',
 			'sengpg',
