@@ -37,6 +37,24 @@ angular.module('icDirectives')
 	}
 ])
 
+.directive('icAlertPopup',[
+
+	'ic',
+
+	function(ic){
+		return {
+			restrict:		'E',
+			templateUrl: 	'partials/ic-alert-popup.html',
+			scope:			true,
+
+			link: function(scope, element, attrs){
+				scope.ic = ic
+
+			}
+		}
+	}
+])
+
 .directive('icOneTimePopup',[
 
 	'ic',
