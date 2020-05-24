@@ -8,7 +8,7 @@
         "languages":            ["de", "none"],
         "activeIconColor":      "#659FD8",
         "plainIconColor":       "#666666",
-        "pages":                        ["home", "tags", "about", "corona", "legal", "contact", "tiles",$
+        "pages":                        ["home", "tags", "about", "corona", "news", "legal", "contact", $
         "map":{
                 "center":                       [52.518611,13.408333],
                 "zoom":                         10,
@@ -16,8 +16,7 @@
                 "maxZoom":                      18,
                 "maxBounds":            [[52.8,13.8],[52.2,13]],
                 "maxClusterRadius":     60,
-
-                "tiles":                "https://api.mapbox.com/styles/v1/mapbox/streets-basic-v11/tiles$
+                "tiles":                "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{$
         },
         "sharing": {
                 "twitter": {
@@ -28,5 +27,4 @@
                 "email": true
         }
 }
-
 
