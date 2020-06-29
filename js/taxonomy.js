@@ -205,7 +205,6 @@
 			'jobcenter',
 			'bamf_mbe',
 			'bamf_jmd',
-			'bzga',
 			'amif',
 			'iq',
 			'senjustva',
