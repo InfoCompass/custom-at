@@ -166,16 +166,20 @@
 
 	<!-- sub categories -->
 
-	<article ng-if = "icEdit.tags.indexOf('misc_category') != -1">
+
+	<article 
+		ng-repeat	= "category in ic.taxonomy.categories"
+		ng-if 		= "category && category.tags.length > 0 && icEdit.tags.indexOf(category.name) != -1"
+	>
 		<div> <!-- spacer --> </div>
 		<div>
-			<h4> {{'ITEMS.MISC_CATEGORIES' | translate}}</h4>
+			<h4> {{'ITEMS.SUBCATEGORIES' | translate}} {{'CATEGORIES.%s' | fill: tag | translate}}</h4>
 
 			<ic-item-property-edit
 				ic-item						= "icItem"
 				ic-type						= "array"
-				ic-translation-key			= "MISC_CATEGORIES"
-				ic-options					= "ic.taxonomy.getCategory('misc_category').tags"
+				ic-translation-key			= "subcategories"
+				ic-options					= "category.tags"
 				ic-option-label				= "'CATEGORIES.%s' | fill: option | translate"
 				ic-allow-multiple-choices	= "true"
 				ic-key						= "tags"
