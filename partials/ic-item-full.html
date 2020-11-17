@@ -220,13 +220,15 @@
 		<div>
 			<div class = "title">{{'ITEMS.SPONSORS' | translate }}</div>
 
-			<a
-				class		= "active block"
-				ng-repeat 	= "sponsor in item | icUnsortedTags : 'sponsors'"				
-				ng-href		= "/list/u/{{::sponsor}}"
-			>
-				{{'UNSORTED_TAGS.%s' | fill : sponsor | translate}}
-			</a>
+			<div ng-repeat 	= "sponsor in item | icUnsortedTags : 'sponsors'">
+				<a
+					class		= "active block"
+					ng-href		= "/list/u/{{::sponsor}}"
+				>
+					{{'UNSORTED_TAGS.%s' | fill : sponsor | translate}}
+				</a>
+				<br/>
+			</div>
 
 			<!-- <div class = "logos">
 				<img 

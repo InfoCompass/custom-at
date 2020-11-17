@@ -390,6 +390,7 @@
 
 	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
 
+
 	<article
 		ng-if = "ic.user.can('edit_items')"
 	>
@@ -402,13 +403,15 @@
 				ic-type						= "string"				
 				ic-key						= "resubmissionDate"
 				ic-date						= "true"
-				ic-skip-time				= "true"
+				ic-skip-time				= "false"
 				ic-activate					= "{{'ITEMS.RESUBMISSION_ACTIVATE' | translate}}"
 			></ic-item-property-edit>
 		</div>
 	</article>
 
-	<div><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
+	<div ng-if = "ic.user.can('edit_items')"><div> <!-- spacer --> </div><hr class  = "bg-2"/></div>
+
 
 	<article
 		ng-if = "ic.user.can('edit_items')"
