@@ -219,7 +219,7 @@
 	<article ng-repeat = "key in ['target_groups', 'districts', 'languages', 'sponsors']">
 		<div> <!-- spacer --> </div>
 		<div>
-			<h4> {{'INTERFACE.TAGS_%s' | fill : key | translate}}</h4>
+			<h4> {{'ITEMS.%s' | fill : key | translate}}</h4>
 
 			<ic-help 
 				ng-if = "['target_groups', 'districts'].indexOf(key) != -1"
