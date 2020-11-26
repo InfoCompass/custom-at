@@ -222,7 +222,7 @@
 			<h4> {{'ITEMS.%s' | fill : key | translate}}</h4>
 
 			<ic-help 
-				ng-if = "['target_groups', 'districts'].indexOf(key) != -1"
+				ng-if = "['target_groups', 'districts', 'languages'].indexOf(key) != -1"
 				ic-message = "{{ 'ITEMS.%s_HELP'|fill:key }}"
 			>
 			</ic-help>
