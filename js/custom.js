@@ -55,6 +55,25 @@ angular.module('icDirectives')
 	}
 ])
 
+.directive('icMikiPopup',[
+
+	'ic',
+
+	function(ic){
+		return {
+			restrict:		'E',
+			templateUrl: 	'partials/ic-miki-popup.html',
+			scope:			true,
+
+			link: function(scope, element, attrs){
+				scope.ic = ic
+
+			}
+		}
+	}
+])
+
+
 .directive('icOneTimePopup',[
 
 	'ic',
