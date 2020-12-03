@@ -122,7 +122,7 @@
 	<!-- remarks -->
 
 	<ic-item-property
-		ng-if			= "item.remarks[ic.site.currentLanguage]"
+		ng-if			= "item.remarks[ic.site.currentLanguage]||item.remarks.length"
 		ic-title 		= "'ITEMS.REMARKS' | translate"
 		ic-content		= "item.remarks[ic.site.currentLanguage] || item.remarks"
 		ic-icon			= "'/images/icons/property-responsible.svg'"
