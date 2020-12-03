@@ -124,7 +124,7 @@
 	<ic-item-property
 		ng-if			= "item.remarks[ic.site.currentLanguage]"
 		ic-title 		= "'ITEMS.REMARKS' | translate"
-		ic-content		= "item.remarks[ic.site.currentLanguage]"
+		ic-content		= "item.remarks[ic.site.currentLanguage] || item.remarks"
 		ic-icon			= "'/images/icons/property-responsible.svg'"
 		ic-link			= "'/list/s/'+encodeURI(item.remarks[ic.site.currentLanguage])"
 	>
