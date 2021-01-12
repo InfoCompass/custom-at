@@ -134,3 +134,16 @@ angular.module('icFilters')
 		}
 	}
 ])
+
+window.addEventListener('ic-ready', event => {
+
+	const ic = event && event.detail && event.detail.ic
+
+	if(ic.config.chatbot){	
+		WebChat.default.init({
+			selector: 		"#webchat",
+			...ic.config.chatbot
+		})
+	}
+
+})

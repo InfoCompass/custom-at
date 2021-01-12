@@ -1,5 +1,8 @@
 :root{
-	--primary-color:			#629bd2;
+	--primary-color:				#659fd8;
+	--primary-backgroud-color:		#FFFFFF;
+	--secondary-background-color:	#e6e6e6;
+	--plain-color:					#949494;
 }
 
 
@@ -15,7 +18,7 @@
 }
 
 .bg-0.hover:hover{
-	background-color:			#629bd2;
+	background-color:			var(--primary-color);
 	color:						#fff !important;
 }
 
@@ -112,9 +115,9 @@
 }
 
 .col-3 {
-	color:						#659FD8 !important;
+	color:						var(--primary-color) !important;
 }
 
 .active {
-	color:						#629bd2;
+	color:						var(--primary-color);
 }
