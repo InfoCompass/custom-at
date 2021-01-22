@@ -30,12 +30,12 @@
 				"email": true
 		},
 		"chatbot": {
-				"initPayload":	"/greet",
-				"customData":	{"language": "de"},
-				"socketUrl":	"https://mikichatbot.ydns.eu",
-				"socketPath":	"/socket.io/",
-				"title":		"MIKI Chatbot", 
-				"params":		{"storage": "session"} 
+			"initPayload":	"/start",
+			"customData":	{"language": "de"},
+			"socketUrl":	"https://mikichatbot.ydns.eu",
+			"socketPath":	"/socket.io/",
+			"title":		"MIKI Chatbot", 
+			"params":		{"storage": "session"} 
 		}
 }
 
