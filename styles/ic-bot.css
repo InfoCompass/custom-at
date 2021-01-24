@@ -39,16 +39,29 @@
 	color:					var(--plain-text-color);	
 }
 
+.rw-conversation-container .rw-response a {
+	background-color:		var(--primary-color);
+	color:					var(--light-text-color);
+	border-radius:			0.3rem;
+	padding:				0 0.2em;
+	box-shadow:				0 0 0 0.2em var(--primary-color)
+}
+
+
 .rw-conversation-container .rw-client {
 	background-color:		var(--primary-color);
+	color:					var(--light-text-color);
+
 }
 .rw-conversation-container .rw-reply {
 	background-color:		var(--primary-color);
+	color:					var(--light-text-color);
 }
 
 .rw-conversation-container .rw-sender {
 	padding:				0.5rem 1rem;
-	background-color:		var(--primary-color);			
+	background-color:		var(--primary-color);	
+	color:					var(--light-text-color);		
 }
 
 

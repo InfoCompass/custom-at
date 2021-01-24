@@ -140,10 +140,29 @@ window.addEventListener('ic-ready', event => {
 	const ic = event && event.detail && event.detail.ic
 
 	if(ic.config.chatbot){	
+
+		function modifyChatLinks(){
+			console.log(document.querySelectorAll('#webchat a'))
+		}
+
+		console.log('Blub')
+
 		WebChat.default.init({
-			selector: 		"#webchat",
+			selector: 			"#webchat",
+			//connectOn:			"open",
+			inputTextFieldHint: 'TODO',
+			onSocketEvent:{
+  				bot_uttered: 	modifyChatLinks,
+  				connect:		modifyChatLinks,
+  			},
+  			onWidgetEvent: {
+  				onChatOpen:	modifyChatLinks
+  			},
 			...ic.config.chatbot
 		})
+
+
+
 	}
 
 })
