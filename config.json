@@ -34,7 +34,7 @@
 			"customData":	{"language": "de"},
 			"socketUrl":	"https://mikichatbot.ydns.eu",
 			"socketPath":	"/socket.io/",
-			"title":		"MIKI Chatbot", 
+			"title":		"MIKI – der BfZ Chatbot", 
 			"params":		{"storage": "session"} 
 		}
 }

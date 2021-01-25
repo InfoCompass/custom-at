@@ -135,29 +135,62 @@ angular.module('icFilters')
 	}
 ])
 
+
+
+
+//BOT
+
 window.addEventListener('ic-ready', event => {
 
 	const ic = event && event.detail && event.detail.ic
 
 	if(ic.config.chatbot){	
 
-		function modifyChatLinks(){
-			console.log(document.querySelectorAll('#webchat a'))
+		function modifyChatWidget(mutationList, observer){
+			const chat_widget 		= document.querySelector("#webchat")
+
+			const links				= Array.from(chat_widget.getElementsByTagName('A'))
+			const target_links		= links.filter( node => node.hasAttribute('target'))
+
+			target_links.forEach( link => {
+				link.removeAttribute('target')
+				link.addEventListener('click', () => WebChat.close() )
+			})
+
+
+			//input hint
+			const current_language	= ic.site.currentLanguage.toUpperCase()
+			const text_input_hint	= ic.languages.translationTable[current_language]['INTERFACE']['CHAT_BOT_INPUT_HINT']
+
+			const textarea			= chat_widget.getElementsByTagName('TEXTAREA')[0]
+
+			textarea && textarea.setAttribute('placeholder', text_input_hint)
+
+			//logo
+
+			const header			= chat_widget.querySelector('.rw-header')
+
+			header && header.classList.add('icon', 'icon-interface-chat_logo', 'white')
+
+			//rw-send 
+
+			const send_button 		= chat_widget.querySelector('button.rw-send')
+
+			send_button && send_button.classList.add('icon', 'icon-interface-right', 'plain')
+
+
+
 		}
 
-		console.log('Blub')
+		const chat_widget 	= document.querySelector("#webchat")
+		const observer		= new MutationObserver(modifyChatWidget)
+
+		observer.observe(chat_widget, {subtree: true, childList: true})
 
 		WebChat.default.init({
 			selector: 			"#webchat",
-			//connectOn:			"open",
-			inputTextFieldHint: 'TODO',
-			onSocketEvent:{
-  				bot_uttered: 	modifyChatLinks,
-  				connect:		modifyChatLinks,
-  			},
-  			onWidgetEvent: {
-  				onChatOpen:	modifyChatLinks
-  			},
+			connectOn:			"open",
+			inputTextFieldHint: '',
 			...ic.config.chatbot
 		})
 
