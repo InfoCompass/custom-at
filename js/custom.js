@@ -182,6 +182,14 @@ window.addEventListener('ic-ready', event => {
 
 
 
+			//launcher
+
+			
+
+			const open_launcher		= chat_widget.querySelector('.rw-open-launcher__container')
+
+			open_launcher && open_launcher.classList.add('icon-interface-chat_bubble', 'white')
+
 		}
 
 		const chat_widget 	= document.querySelector("#webchat")
