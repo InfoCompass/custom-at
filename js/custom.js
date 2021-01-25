@@ -144,6 +144,8 @@ window.addEventListener('ic-ready', event => {
 
 	const ic = event && event.detail && event.detail.ic
 
+	console.log('ic-ready, starting chat bot')
+
 	if(ic.config.chatbot){	
 
 		function modifyChatWidget(mutationList, observer){
