@@ -191,7 +191,7 @@ window.addEventListener('ic-ready', event => {
 
 		WebChat.default.init({
 			selector: 			"#webchat",
-			connectOn:			"open",
+			connectOn:			"mount",
 			inputTextFieldHint: '',
 			...ic.config.chatbot
 		})
