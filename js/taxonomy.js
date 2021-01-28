@@ -3,7 +3,7 @@
 
 	exports.categories = [
 		{
-			name:	'accomodation',
+			name:	'accommodation',
 			colors:	['#FA9A20'],
 			tags: 	[]
 		},
@@ -115,7 +115,7 @@
 			'women',
 			'asylum_seekers',
 			'eu_citizens',
-			'no_health_ensurance',
+			'no_health_insurance',
 			'houseless',
 			'lgbtiq',
 			'misc_target',
