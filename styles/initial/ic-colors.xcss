@@ -1,9 +1,3 @@
-:root{
-	--primary-color:				#659fd8;
-	--primary-backgroud-color:		#FFFFFF;
-	--secondary-background-color:	#e6e6e6;
-	--plain-color:					#949494;
-}
 
 
 .bg-t {
