@@ -29,13 +29,12 @@
 				"whatsapp": true,
 				"email": true
 		},
-		"chatbot": {
-			"initPayload":	"/start",
-			"customData":	{"language": "de"},
-			"socketUrl":	"https://mikichatbot.ydns.eu",
-			"socketPath":	"/socket.io/",
-			"title":		"MIKI – der BfZ Chatbot", 
-			"params":		{"storage": "session"} 
-		}
+		"xwebfonts": [
+			{
+				"fontFamily": 	"myriad-pro",
+				"url":			"https://use.typekit.net/ylt7opr.css",
+				"confirmation": "CONTENT.WEBFONT_CONFIRMATION_MYRIAD_PRO"
+			}
+		]
 }
 

@@ -197,10 +197,18 @@ window.addEventListener('ic-ready', event => {
 
 		observer.observe(chat_widget, {subtree: true, childList: true})
 
-		WebChat.default.init({
+		console.log(WebChat)
+
+		WebChat.default({
 			selector: 			"#webchat",
 			connectOn:			"mount",
 			inputTextFieldHint: '',
+			customMessageDelay: (message) => {
+									let delay = message.length * 7
+									if (delay > 2 * 1000) delay = 2 * 600
+									if (delay < 400) delay = 600
+									return delay
+								},
 			...ic.config.chatbot
 		})
 
