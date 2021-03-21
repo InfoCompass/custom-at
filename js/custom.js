@@ -149,7 +149,7 @@ window.addEventListener('ic-ready', event => {
 	if(ic.config.chatbot){	
 
 		function modifyChatWidget(mutationList, observer){
-			const chat_widget 		= document.querySelector("#webchat")
+			const chat_widget 		= document.querySelector("#rasaWebchatPro")
 
 			const links				= Array.from(chat_widget.getElementsByTagName('A'))
 			const target_links		= links.filter( node => node.hasAttribute('target'))
@@ -184,24 +184,42 @@ window.addEventListener('ic-ready', event => {
 
 			//launcher
 
-			
-
 			const open_launcher		= chat_widget.querySelector('.rw-open-launcher__container')
 
-			open_launcher && open_launcher.classList.add('icon-interface-chat_bubble', 'white')
+			if(!open_launcher) 	return null
+
+			let	icon				= open_launcher.querySelector('.icon-interface-chat_bubble')
+
+			if(icon)			return null
+			
+			icon = document.createElement('div')
+			icon.classList.add('icon', 'icon-interface-chat_bubble', 'white')
+			open_launcher.appendChild(icon)
 
 		}
 
-		const chat_widget 	= document.querySelector("#webchat")
-		const observer		= new MutationObserver(modifyChatWidget)
 
-		observer.observe(chat_widget, {subtree: true, childList: true})
 
-		console.log(WebChat)
+		const document_observer = new MutationObserver( (mutations, observer) => {
+
+			const chat_widget = document.getElementById('rasaWebchatPro')	
+
+			if(chat_widget){
+
+				console.log(chat_widget)
+
+				const webchat_observer	= new MutationObserver(modifyChatWidget)
+				webchat_observer.observe(chat_widget, {subtree: true, childList: true})
+				observer.disconnect()				
+			}
+		})
+		
+		document_observer.observe(document, {subtree: true, childList: true})
+
 
 		WebChat.default({
-			selector: 			"#webchat",
 			connectOn:			"mount",
+			title:				"!!!title", //TODO
 			inputTextFieldHint: '',
 			customMessageDelay: (message) => {
 									let delay = message.length * 7

@@ -29,7 +29,7 @@
 				"whatsapp": true,
 				"email": true
 		},
-        "chatbotx": {
+        "chatbot": {
                 "initPayload":  "/start",
                 "customData":   {"language": "de"},
                 "socketUrl":    "https://bot.beratungsnetz-migration.de",

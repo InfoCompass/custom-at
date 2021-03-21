@@ -11,12 +11,12 @@
 	width:					100%;
 	height:					100%;
 }
-.rw-launcher .rw-open-launcher__container * {
+.rw-launcher .rw-open-launcher__container img {
 	display:				none;
 }
 
-.rw-launcher .rw-open-launcher__container:before {
-	content:				'';
+.rw-launcher .rw-open-launcher__container .icon {
+
 	display:				block;
 	font-size:				2.25rem;
 	animation-duration: 	.5s;
