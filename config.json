@@ -2,7 +2,6 @@
 		"xbackendLocation":     "http://127.0.0.1:2411",
 		"backendLocation":      "https://api.beratungsnetz-migration.de",
 		"publicItems":          "https://public.beratungsnetz-migration.de",
-		"xpublicItems":         "http://127.0.0.1:3001/items",
 		"statsLocation":        "https://stats.beratungsnetz-migration.de",
 		"frontendLocation":     "https://www.beratungsnetz-migration.de",
 		"block":                "",
@@ -11,7 +10,7 @@
 		"languages":            ["de", "en", "none"],
 		"activeIconColor":      "#659FD8",
 		"plainIconColor":       "#666666",
-		"pages":                        ["home", "tags", "about", "corona", "news", "legal", "contact", "tiles", "emergency", "manual"],
+		"pages":                ["home", "tags", "about", "corona", "news", "legal", "contact", "tiles", "emergency", "manual"],
 		"map":{
 				"center":                       [52.518611,13.408333],
 				"zoom":                         10,
@@ -34,8 +33,7 @@
                 "customData":   {"language": "de"},
                 "socketUrl":    "https://bot.beratungsnetz-migration.de",
                 "socketPath":   "/socket.io/",
-                "title":                "MIKI – der BfZ Chatbot", 
-                "params":               {"storage": "session"} 
+                "title":        "MIKI – der BfZ Chatbot (beta)"                
         },
 		"xwebfonts": [
 			{

@@ -144,19 +144,42 @@ window.addEventListener('ic-ready', event => {
 
 	const ic = event && event.detail && event.detail.ic
 
+	const WebChatId = "WebChatPro"
+
 	console.log('ic-ready, starting chat bot')
 
 	if(ic.config.chatbot){	
 
 		function modifyChatWidget(mutationList, observer){
-			const chat_widget 		= document.querySelector("#rasaWebchatPro")
-
+			const chat_widget 		= getChatWidget()
 			const links				= Array.from(chat_widget.getElementsByTagName('A'))
 			const target_links		= links.filter( node => node.hasAttribute('target'))
 
 			target_links.forEach( link => {
 				link.removeAttribute('target')
-				link.addEventListener('click', () => WebChat.close() )
+				link.addEventListener('click', () => {
+					
+					chat_widget.remove()
+
+
+					try {
+						const chat_session = JSON.parse(sessionStorage.getItem('chat_session'))
+
+						chat_session.params
+
+						chat_session.params.isChatOpen = false
+						chat_session.isChatVisible = false
+
+						sessionStorage.setItem('chat_session', JSON.stringify(chat_session))
+
+					} catch(e) {
+						console.log(e)
+					}
+
+
+					initChat()
+					//WebChat.close() 
+				})
 			})
 
 
@@ -199,38 +222,54 @@ window.addEventListener('ic-ready', event => {
 		}
 
 
+		function getChatWidget(){
+			let chat_widget = document.getElementById(WebChatId)
 
-		const document_observer = new MutationObserver( (mutations, observer) => {
-
-			const chat_widget = document.getElementById('rasaWebchatPro')	
-
-			if(chat_widget){
-
-				console.log(chat_widget)
-
-				const webchat_observer	= new MutationObserver(modifyChatWidget)
-				webchat_observer.observe(chat_widget, {subtree: true, childList: true})
-				observer.disconnect()				
+			if(!chat_widget){
+				chat_widget = document.createElement('div')
+				chat_widget.setAttribute('id', WebChatId)
+				document.body.appendChild(chat_widget)
 			}
-		})
-		
-		document_observer.observe(document, {subtree: true, childList: true})
+
+			return chat_widget
+
+		}
+
+		function initChat(){
+
+			WebChat.default(
+				{
+					...ic.config.chatbot,
+					connectOn:			"mount",
+					inputTextFieldHint: '',
+					autoClearCache:		true,
+					customMessageDelay: (message) => {
+											let delay = message.length * 7
+											if (delay > 2 * 1000) delay = 2 * 600
+											if (delay < 400) delay = 600
+											return delay
+										},
+					isChatOpen:			false,
+					params:				{
+											storage: 	"session",
+										}
+
+				},
+
+				getChatWidget()
+			)
+			
+			const chat_widget 		= getChatWidget()
+			const webchat_observer	= new MutationObserver(modifyChatWidget)
+
+			webchat_observer.observe(chat_widget, {subtree: true, childList: true})
+
+		}
 
 
-		WebChat.default({
-			connectOn:			"mount",
-			title:				"!!!title", //TODO
-			inputTextFieldHint: '',
-			customMessageDelay: (message) => {
-									let delay = message.length * 7
-									if (delay > 2 * 1000) delay = 2 * 600
-									if (delay < 400) delay = 600
-									return delay
-								},
-			...ic.config.chatbot
-		})
 
 
+		initChat()
 
 	}
 
