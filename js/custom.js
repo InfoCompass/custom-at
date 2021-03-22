@@ -244,10 +244,11 @@ window.addEventListener('ic-ready', event => {
 					inputTextFieldHint: '',
 					autoClearCache:		true,
 					customMessageDelay: (message) => {
-											let delay = message.length * 7
-											if (delay > 2 * 1000) delay = 2 * 600
-											if (delay < 400) delay = 600
-											return delay
+											// let delay = message.length * 7
+											// if (delay > 2 * 1000) delay = 2 * 600
+											// if (delay < 400) delay = 600
+											// return delay
+											return 0
 										},
 					isChatOpen:			false,
 					params:				{
@@ -258,7 +259,7 @@ window.addEventListener('ic-ready', event => {
 
 				getChatWidget()
 			)
-			
+
 			const chat_widget 		= getChatWidget()
 			const webchat_observer	= new MutationObserver(modifyChatWidget)
 
