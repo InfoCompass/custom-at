@@ -228,6 +228,7 @@ window.addEventListener('ic-ready', event => {
 			if(!chat_widget){
 				chat_widget = document.createElement('div')
 				chat_widget.setAttribute('id', WebChatId)
+				chat_widget.classList.add('screen-only')
 				document.body.appendChild(chat_widget)
 			}
 
