@@ -68,6 +68,16 @@ angular.module('icDirectives')
 			link: function(scope, element, attrs){
 				scope.ic = ic
 
+				scope.$watch(function(){
+					ic.overlays.show.mikiPopup
+					?	document.body.classList.add('miki-popup')
+					:	document.body.classList.remove('miki-popup')
+				})
+
+				scope.$on('$destroy', function(){
+					document.body.classList.remove('miki-popup')
+				})
+
 			}
 		}
 	}

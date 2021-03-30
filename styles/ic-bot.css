@@ -145,4 +145,27 @@
 }
 
 
+/* highlight during popup */
 
+.miki-popup #WebChatPro {
+	z-index:				999999;
+}
+
+
+.miki-popup #WebChatPro .rw-launcher .rw-open-launcher__container:before {
+	content: 			'';
+	position:			absolute;
+	left:				-2rem;
+	right:				-2rem;
+	top:				-2rem;
+	bottom:				-2rem;
+
+	border:				0.5rem solid rgba(255,100,100,1);
+
+	border-radius:		100%;
+
+}
+
+.xlarge {
+	font-size:			4rem!important;
+}
