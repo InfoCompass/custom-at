@@ -34,13 +34,6 @@
                 "socketUrl":    "https://bot.beratungsnetz-migration.de",
                 "socketPath":   "/socket.io/",
                 "title":        "MIKI – der BfZ Chatbot (beta)"                
-        },
-		"xwebfonts": [
-			{
-				"fontFamily": 	"myriad-pro",
-				"url":			"https://use.typekit.net/ylt7opr.css",
-				"confirmation": "CONTENT.WEBFONT_CONFIRMATION_MYRIAD_PRO"
-			}
-		]
+        }
 }
 
