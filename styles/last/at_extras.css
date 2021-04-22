@@ -30,20 +30,6 @@ ic-page	h3 {
 	font-size:					1.75em;
 }
 
-ic-page .no-space{
-	margin-bottom:				0;
-	padding-bottom:				0;
-}
-
-ic-page ic-search {
-	max-width:					45em;
-}
-
-ic-search form {
-	background:					transparent;
-}
-
-
 
 .XS ic-taxonomy-filter section  > div {
 	padding-left:				1rem !important;	
