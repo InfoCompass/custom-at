@@ -135,16 +135,14 @@ angular.module('icFilters')
 		var dummy = {name: 'unknown'}
 		
 		return function(item){
-			var tags = item && item.tags
+			var tags = item && item.tags || item
 
-			if(!tags) return dummy
+			if(!Array.isArray(tags)) return dummy
 
-
-			return icTaxonomy.getCategory(item && item.primaryTopic || tags)
+			return icTaxonomy.getCategory(item && item.primaryTopic || tags) || dummy
 		}
 	}
 ])
-
 
 
 
