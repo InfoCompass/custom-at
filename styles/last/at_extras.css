@@ -164,47 +164,86 @@ ic-page #sponsors {
 	display:					flex;
 	flex-wrap:					wrap;
 	justify-content: 			space-around;
-}
-
-ic-page #sponsors > * {
-	flex:						0 0 auto;
 	text-align:					center;
-	margin-bottom:				2rem;
-	max-width:					100%;
+	margin-bottom:				1rem;
 }
 
-ic-page #sponsors > * .logos {
-	display:					flex;
-	align-items:				center;
-	justify-content: 			center;
-	flex-wrap:					wrap;
+ic-page #sponsors > *{
+	width:						20rem;
 	max-width:					100%;
+
 }
+
+ic-page #sponsors > * .logos{
+	flex:						0 0 auto;
+	display:					flex;
+	flex-direction:				column;
+	justify-content:			center;	
+	margin:						auto;
+}
+
+
+ic-page #sponsors > *:nth-child(1) .logos{	
+	height:						15rem;
+	width:						15rem;
+}
+
+ic-page #sponsors > *:nth-child(1) .logos > a {
+	height:						10rem;
+}
+
+
+
+
+ic-page #sponsors > *:nth-child(2) .logos{
+	height:						15rem;
+	width:						15rem;
+
+}
+
+ic-page #sponsors > *:nth-child(2) .logos > a {
+	height:						10rem;	
+}
+
+
+
+
+ic-page #sponsors > *:nth-child(3) .logos{
+	height:						15rem;
+	width:						15rem;
+
+}
+
+ic-page #sponsors > *:nth-child(3) .logos > a {
+	height:						4rem;	
+}
+
+
+
+
+ic-page #sponsors > *:nth-child(4) {
+	flex:						1 0 100%;
+	height:						auto;
+}
+
+ic-page #sponsors > *:nth-child(4) .logos > a {
+	
+}
+
 
 ic-page #sponsors > * .logos a {
-	flex:						1 0 0;
-	height:						12rem;
-	width:						16rem;
+	flex:						0 0 auto;
+	display:					block;
 	background-size:			contain;
 	background-repeat:			no-repeat;
 	background-position:		50% 50%;
-	margin:						1rem;
-	min-width:					10rem;
+	min-width:					12rem;
 	max-width:					20rem;
+	flex-direction:				column;
 }
 
-ic-page #sponsors > * .logos div {
-	display:					flex;
-	flex:						1 0 0;
-	align-items:				center;
-	justify-content: 			center;
-	flex-wrap:					wrap;
-	max-width:					100%;
-}
-
-
-.XS ic-page #sponsors > * .logos {
-	flex-wrap:					wrap;
+ic-page #sponsors > * .logos a + a {
+	margin-top:					1rem;
 }
 
 .boxed {
