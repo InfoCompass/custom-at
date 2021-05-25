@@ -179,6 +179,7 @@ ic-page #sponsors > * .logos{
 	display:					flex;
 	flex-direction:				column;
 	justify-content:			center;	
+	align-items:				center;
 	margin:						auto;
 }
 
@@ -227,7 +228,9 @@ ic-page #sponsors > *:nth-child(4) {
 }
 
 ic-page #sponsors > *:nth-child(4) .logos > a {
-	
+	height:						5rem;
+	width:						45rem;
+	max-width:					100%;
 }
 
 
@@ -238,7 +241,6 @@ ic-page #sponsors > * .logos a {
 	background-repeat:			no-repeat;
 	background-position:		50% 50%;
 	min-width:					12rem;
-	max-width:					20rem;
 	flex-direction:				column;
 }
 
