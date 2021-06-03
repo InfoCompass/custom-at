@@ -23,7 +23,7 @@
 >
 	<li
 		ng-if		= "true"
-		class 		= "icon icon-interface-all"
+		class 		= "icon icon-interface-radio checked"
 		ng-class	= "{'bg-3 white':ic.filterConfig.categoryCleared()}"
 		ng-click	= "ic.filterConfig.clearCategory()" 
 		ic-touch-me	= "true"
@@ -69,7 +69,7 @@
 		ng-repeat	= "(key, tagGroup) in ic.taxonomy.tags"
 	>
 	<li
-		class 		= "icon icon-interface-all"
+		class 		= "icon icon-interface-radio checked"
 		ng-class	= "{'bg-3 white':ic.filterConfig.unsortedTagCleared(tagGroup)}"
 		ng-click	= "ic.filterConfig.clearUnsortedTag(tagGroup)" 
 		ic-touch-me	= "true"
@@ -144,7 +144,7 @@
 		ng-if		= "icExpand == 'sponsors'"
 	>
 	<li
-		class 		= "icon icon-interface-all"
+		class 		= "icon icon-interface-radio checked"
 		ng-class	= "{'bg-3 white':ic.filterConfig.unsortedTagCleared(ic.taxonomy.tags.sponsors)}"
 		ng-click	= "ic.filterConfig.clearUnsortedTag(ic.taxonomy.tags.sponsors)" 
 		ic-touch-me	= "true"
