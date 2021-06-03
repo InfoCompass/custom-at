@@ -29,19 +29,7 @@
 			{{'INTERFACE.FULL_LIST' | translate}}
 		</a>	
 	</li>
-
-	<li 
-		ng-if = "!ic.user.loggedIn && icPlain"
-		class = "bg-3"
-	>
-		<a 
-			ng-click = "ic.site.activeItem = ic.itemStorage.newItem(); ic.site.editItem = true"
-			ic-touch-me
-		>
-			<span class	= "icon large left icon-interface-edit white"></span>
-			{{'INTERFACE.SUGGEST_NEW_ITEM' | translate }}
-		</a>
-	</li>
+	
 	<li 
 		ng-show = "!ic.user.loggedIn && icPlain"
 		class 	= "bg-0"
