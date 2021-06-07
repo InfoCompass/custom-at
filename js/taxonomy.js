@@ -163,6 +163,7 @@
 			'senias_msd',
 			'senias_mifl',
 			'senbjf',
+			'senbjf_stm',
 			'jobcenter',
 			'bamf_mbe',
 			'bamf_jmd',
