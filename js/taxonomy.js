@@ -74,6 +74,7 @@
 		target_groups: [
 			'young',
 			'women',
+			'families',
 			'asylum_seekers',
 			'eu_citizens',
 			'no_health_insurance',
