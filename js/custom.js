@@ -84,45 +84,6 @@ angular.module('icDirectives')
 ])
 
 
-.directive('icOneTimePopup',[
-
-	'ic',
-
-	function(ic){
-		return {
-			restrict:	'A',
-			scope: 		{
-							icPopupId: 		"@",
-							icPopupName: 	"@",
-							icPopupMessage: "<?"
-						},
-
-			link: function(scope, element, attrs){
-				scope.ic = ic
-
-				if(!scope.icPopupId){
-					console.warn('icOneTimePopup: missing icPopupId')
-					return null
-				}
-				var seen = {}
-
-				try{
-					seen = JSON.parse(localStorage.getItem('seenOneTimePopups')) || {}
-				} catch(e) { console.log(e) }
-
-				if(seen && seen[scope.icPopupId]) return true
-
-				ic.overlays.open(scope.icPopupName, scope.icPopupMessage || undefined)
-				.finally(function(){
-					seen[scope.icPopupId] = true
-
-					localStorage.setItem('seenOneTimePopups', JSON.stringify(seen))
-				})
-			}
-		}
-	}
-])
-
 
 
 angular.module('icFilters')
