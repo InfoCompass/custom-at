@@ -7,7 +7,7 @@
 		"block":                "",
 		"title":                "Berliner Beratungsnetz für Zugewanderte",
 		"disableLists":         true,
-		"languages":            ["de"],
+		"languages":            ["de", "en"],
 		"adminLanguages":		["en", "none"],
 		"activeIconColor":      "#659FD8",
 		"plainIconColor":       "#666666",
