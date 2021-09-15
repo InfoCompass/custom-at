@@ -16,3 +16,11 @@
 }
 
 
+
+:root.ic-font-size-adjusted {
+
+	--dark-text-color:				#111;	
+	--light-text-color:				#fff;
+	--plain-text-color:				#222;
+
+}
