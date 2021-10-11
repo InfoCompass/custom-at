@@ -20,6 +20,15 @@
  <ic-alert-popup		ng-class = "{'ic-hide': !ic.overlays.show.alertPopup}"		class = "bg-0 center greedy">							</ic-alert-popup>
  <ic-miki-popup			ng-class = "{'ic-hide': !ic.overlays.show.mikiPopup}"		class = "bg-0 center greedy">							</ic-miki-popup>
 
+
+<ic-item-proposal-preview 
+	ng-if 		= "ic.overlays.show.itemProposalPreview"
+	class		= "bg-0 center max"
+	ic-proposal = "ic.overlays.messages.itemProposalPreview[0]"
+	ic-item		= "ic.site.activeItem"
+></ic-item-proposal-preview>
+
+
 <ic-taxonomy-overlay	
 	ng-class	= "{'ic-hide' :!ic.overlays.show.taxonomyOverlayCategories}"		
 	class 		= "bg-0 center max" 

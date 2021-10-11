@@ -44,12 +44,7 @@
 	</li>
 
 	<!-- <li><a href="#">		{{'INTERFACE.CALENDAR' 		| translate}}</a>	</li> -->
-	<li
-		ng-mouseenter 		= "showMore = true" 
-		ng-mouseleave		= "showMore	= false"
-		ng-click			= "showMore = !showMore"
-		ic-click-outside 	= "showMore = false" 
-	>
+	<li>
 		<a 
 			class 			= "icon right icon-interface-down white"
 			ng-if			= "!icPlain"
@@ -59,7 +54,7 @@
 
 		<ul 
 			class	= "bg-0"
-			ng-show = "icPlain || showMore"
+			style	= "{{icPlain ? 'display: block;' : ''}}"
 		>
 			<li 
 				ng-repeat 	= "page in ic.config.pages"
@@ -87,108 +82,10 @@
 
 	<li 
 		ng-if				= "ic.user.loggedIn"
-		ng-mouseenter 		= "showAdmin = true" 
-		ng-mouseleave		= "showAdmin = false"
-		ng-click			= "showAdmin = !showAdmin"
-		ic-click-outside 	= "showAdmin = false" 
+
+		ic-user-menu
+		icPlain 			= "icPlain"
 	>
-		<a 
-			ng-if = "!icPlain"
-			class = "icon right icon-interface-down white"
-			ic-touch-me
-		>
-			{{ic.user.displayName}}
-		</a>	
-		<ul 
-			ng-show = "icPlain || showAdmin"
-		>
-			<li
-				ng-if = "ic.user.can('edit_items')"
-				class = "bg-0 hover"  
-			>
-				<a 
-					
-					ng-click = "ic.site.activeItem = ic.itemStorage.newItem(); ic.site.editItem = true"
-					ic-touch-me
-				>{{'INTERFACE.CREATE_NEW_ITEM' | translate}}</a>	
-			</li>
-			<li 
-				ng-if = "!ic.user.can('edit_items')"
-				class = "bg-0 hover"  
-			>
-				<a 
-					ng-click = "ic.site.activeItem = ic.itemStorage.newItem(); ic.site.editItem = true"
-					ic-touch-me
-				>{{'INTERFACE.SUGGEST_NEW_ITEM' | translate}}</a>	
-			</li>
-			<li
-				class = "bg-0 hover"  
-			>
-				<a
-					ng-click = "ic.admin.updateTranslations()"
-					ic-touch-me
-				>{{'INTERFACE.UPDATE_TRANSLATIONS' | translate}}</a>	
-			</li>
-
-			<li
-				class = "bg-0 hover"  
-			>
-				<a 
-					href = "/list/u/state_draft"
-					ic-touch-me
-				>
-					<span>{{'INTERFACE.LIST_DRAFT' | translate}}</span>
-					<span class ="bubble shade-light col-1">{{ic.itemStorage.currentStats.totals['state_draft'] || 0}}</span>
-				</a>	
-			</li>
-
-			<li
-				class = "bg-0 hover"  
-			>
-				<a 
-					href = "/list/u/state_suggestion"
-				 	ic-touch-me
-				>
-					<span>{{'INTERFACE.LIST_SUGGESTION' | translate}}</span>
-					<span class ="bubble shade-light col-1">{{ic.itemStorage.currentStats.totals['state_suggestion']|| 0}}</span>
-				</a>	
-			</li>
-
-
-			<li
-				class = "bg-0 hover"  
-			>
-				<a
-					href = "/list/u/state_archived"
-					ic-touch-me
-				>
-					<span>{{'INTERFACE.LIST_ARCHIVED' | translate}}</span>
-					<span class ="bubble shade-light col-1">{{ic.itemStorage.currentStats.totals['state_archived'] || 0}}</span>
-				</a>	
-			</li>
-
-			<!-- <li
-				class = "bg-0 hover"  
-			>
-				<a
-					ng-click = "ic.overlays.open('listsMenu')"
-					ic-touch-me
-				>
-					<span>{{'INTERFACE.MANAGE_LISTS' | translate}}</span>
-				</a>	
-			</li> -->
-
-			<li
-				class = "bg-0 hover"  
-			>
-				<a 
-					ng-click = "ic.user.logout()"
-					ic-touch-me
-				>
-					{{('INTERFACE.LOGOUT' | translate) + (icPlain ? ': '+ic.user.displayName :'')}}
-				</a>
-			</li>
-
-		</ul>
+		
 	</li>
 </ul>

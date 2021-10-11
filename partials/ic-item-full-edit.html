@@ -20,6 +20,19 @@
 		</div>
 	</div>
 
+		<article ng-if = "ic.user.can('edit_items') && icItem.proposals && icItem.proposals.length > 0">
+
+		<div> <!-- spacer --> </div>
+		<div>
+			<h4> {{'INTERFACE.PROPOSALS' | translate}}</h4>
+
+			<p>{{'INTERFACE.PROPOSALS_NOTE' | translate}}</p>
+
+			<ic-item-proposals ic-item = "icItem"></ic-item-proposals>
+		</div>
+
+	</article>
+
 
 	<div>		
 		<div> <!-- spacer --> </div>
