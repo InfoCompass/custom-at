@@ -125,6 +125,8 @@
 			'kikuyu',
 			'korean',
 			'kurdish',
+			'kurdish_kurmanji',
+			'kurdish_sorani',		
 			'laz',
 			'lithuanian',
 			'luo',
