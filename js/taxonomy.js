@@ -161,21 +161,8 @@
 
 
 		sponsors:[
-			'senias',
-			'senias_partin',
-			'senias_akrom',
-			'senias_intlot',
-			'senias_msd',
-			'senias_mifl',
-			'senbjf',
-			'senbjf_stm',
-			'jobcenter',
-			'bamf_mbe',
-			'bamf_jmd',
+			'aktion_mensch'
 			'amif',
-			'iq',
-			'senjustva',
-			'sengpg',
 			'ba_charlottenburg_wilmersdorf',
 			'ba_friedrichshain_kreuzberg',
 			'ba_lichtenberg',
@@ -188,14 +175,28 @@
 			'ba_steglitz_zehlendorf',
 			'ba_tempelhof_schoeneberg',
 			'ba_treptow_koepenik',
-			'bmfsfj',
+			'bamf_jmd',
+			'bamf_mbe',
 			'bmas',
+			'bmfsfj',
+			'bmg',
 			'bmi',
 			'bzga',
 			'ehap',
 			'esf',
+			'iq',
+			'jobcenter',
 			'lotto',
-			'aktion_mensch'
+			'senbjf',
+			'senbjf_stm',
+			'sengpg',
+			'senias',
+			'senias_akrom',
+			'senias_intlot',
+			'senias_mifl',
+			'senias_msd',
+			'senias_partin',
+			'senjustva',
 		]
 	}
 
