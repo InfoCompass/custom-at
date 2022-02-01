@@ -161,7 +161,7 @@
 
 
 		sponsors:[
-			'aktion_mensch'
+			'aktion_mensch',
 			'amif',
 			'ba_charlottenburg_wilmersdorf',
 			'ba_friedrichshain_kreuzberg',
