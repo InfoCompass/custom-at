@@ -146,6 +146,7 @@
 			'slovene',
 			'spanish',
 			'suomi',
+			'susu',
 			'swahili',
 			'tajiki',
 			'thai',
