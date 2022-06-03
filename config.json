@@ -11,7 +11,7 @@
 		"adminLanguages":	["none"],
 		"activeIconColor":      "#659FD8",
 		"plainIconColor":       "#666666",
-		"pages":                ["home", "tags", "about", "corona", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine"],
+		"pages":                ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine"],
 		"adminPages":           ["icons"],
 		"map":{
 				"center":                       [52.518611,13.408333],
