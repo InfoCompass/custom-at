@@ -11,13 +11,13 @@
 		"adminLanguages":	["none"],
 		"activeIconColor":      "#659FD8",
 		"plainIconColor":       "#666666",
-		"pages":                ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine"],
+		"pages":                ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine", "download"],
 		"adminPages":           ["icons"],
 		"map":{
-				"center":                       [52.518611,13.408333],
-				"zoom":                         10,
-				"minZoom":                      11,
-				"maxZoom":                      18,
+				"center":               [52.518611,13.408333],
+				"zoom":                 10,
+				"minZoom":              11,
+				"maxZoom":              18,
 				"maxBounds":            [[52.8,13.8],[52.2,13]],
 				"maxClusterRadius":     60,
 				"tiles":		"https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicmhvdGVwIiwiYSI6ImNqMGRib2dmYTAwMGEzMnBkNDBuZ2dqMHMifQ.LNUbADugC76iQ91I73xFwg"
