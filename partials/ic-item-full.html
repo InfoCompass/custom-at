@@ -245,10 +245,10 @@
 
 
 
-	<div>
+	<div class = "screen-only">
 		<div> <!-- spacer --> </div>
 		<div>
-			<h4 class = "screen-only">{{'INTERFACE.QR_CODE' | translate}}</h4>
+			<h4>{{'INTERFACE.QR_CODE' | translate}}</h4>
 			<div class = "qrcode">
 				<qrcode 
 					version					=	"4" 
@@ -269,6 +269,7 @@
 </section>
 
 <footer class  = "print-only">
+
 	<div class = "logo">
 		<ic-logo-print></ic-logo-print>
 	</div>
@@ -277,6 +278,18 @@
 		{{item | icItemLink}}
 	</div>
 
+	<div class = "qrcode">
+		<qrcode 
+			version					=	"4" 
+			error-correction-level	=	"M" 
+			size					=	"200" 
+			data					=	"{{item | icItemLink}}"
+			ng-if					=	"item"
+		>
+		</qrcode>
+	</div>
+
 </footer>
+
 
 <footer class = "screen-only" ic-item-full-footer ic-item ="item"></footer>
