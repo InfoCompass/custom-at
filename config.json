@@ -1,41 +1,45 @@
 {
-		"xbackendLocation":     "http://127.0.0.1:2411",
-		"backendLocation":      "https://api.beratungsnetz-migration.de",
-		"publicItems":          "https://public.beratungsnetz-migration.de/items",
-		"statsLocation":        "https://stats.beratungsnetz-migration.de",
-		"frontendLocation":     "https://www.beratungsnetz-migration.de",
-		"block":                "",
-		"title":                "Berliner Beratungsnetz für Zugewanderte",
-		"disableLists":         true,
-		"languages":            ["de", "en"],
-		"adminLanguages":	["none"],
-		"activeIconColor":      "#659FD8",
-		"plainIconColor":       "#666666",
-		"pages":                ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine", "download"],
-		"adminPages":           ["icons"],
-		"map":{
-				"center":               [52.518611,13.408333],
-				"zoom":                 10,
-				"minZoom":              11,
-				"maxZoom":              18,
-				"maxBounds":            [[52.8,13.8],[52.2,13]],
-				"maxClusterRadius":     60,
-				"tiles":		"https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicmhvdGVwIiwiYSI6ImNqMGRib2dmYTAwMGEzMnBkNDBuZ2dqMHMifQ.LNUbADugC76iQ91I73xFwg"
-		},
-		"sharing": {
-				"twitter": {
-						"hashtag": "test"
-				},
-				"facebook": true,
-				"whatsapp": true,
-				"email": true
-		},
-        "chatbot": {
-                "initPayload":  "/start",
-                "customData":   {"language": "de"},
-                "socketUrl":    "https://bot.beratungsnetz-migration.de",
-                "socketPath":   "/socket.io/",
-                "title":        "MIKI – der BfZ Chatbot (beta)"                
-        }
+	"xbackendLocation":     "http://127.0.0.1:2411",
+	"backendLocation":      "https://api.beratungsnetz-migration.de",
+	"publicItems":          "https://public.beratungsnetz-migration.de/items",
+	"statsLocation":        "https://stats.beratungsnetz-migration.de",
+	"frontendLocation":     "https://www.beratungsnetz-migration.de",
+	"block":                "",
+	"title":                "Berliner Beratungsnetz für Zugewanderte",
+	"disableLists":         true,
+	"languages":            ["de", "en"],
+	"adminLanguages":	["none"],
+	"activeIconColor":      "#659FD8",
+	"plainIconColor":       "#666666",
+	"pages":                ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine", "download"],
+	"adminPages":           ["icons"],
+	"map":{
+			"center":               [52.518611,13.408333],
+			"zoom":                 10,
+			"minZoom":              11,
+			"maxZoom":              18,
+			"maxBounds":            [[52.8,13.8],[52.2,13]],
+			"maxClusterRadius":     60,
+			"tiles":		"https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicmhvdGVwIiwiYSI6ImNqMGRib2dmYTAwMGEzMnBkNDBuZ2dqMHMifQ.LNUbADugC76iQ91I73xFwg"
+	},
+	"sharing": {
+			"twitter": {
+					"hashtag": "test"
+			},
+			"facebook": true,
+			"whatsapp": true,
+			"email": true
+	},
+	"export":{
+		"properties": ["title", "description", "primaryTopic", "address", "zip", "contact", "email", "phone"],
+		"tagGroups": ["districts", "target_groups", "sponsors"]
+	},	
+	"chatbot": {
+		"initPayload":  "/start",
+		"customData":   {"language": "de"},
+		"socketUrl":    "https://bot.beratungsnetz-migration.de",
+		"socketPath":   "/socket.io/",
+		"title":        "MIKI – der BfZ Chatbot (beta)"                
+	}
 }
 
