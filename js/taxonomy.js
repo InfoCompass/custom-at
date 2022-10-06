@@ -99,6 +99,7 @@
 		],
 
 		languages: [
+
 			'albanian',
 			'amharic',
 			'arabic',
@@ -116,6 +117,7 @@
 			'english',
 			'farsi',
 			'french',
+			'georgian', 			// Geordisch
 			'greek',
 			'hebrew',
 			'hindu',
@@ -127,7 +129,9 @@
 			'kurdish',
 			'kurdish_kurmanji',
 			'kurdish_sorani',		
+			'latvian', 				// Lettisch, 
 			'laz',
+			'lingala', 				// Lingala, 
 			'lithuanian',
 			'luo',
 			'macedonian',
