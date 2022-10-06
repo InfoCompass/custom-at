@@ -30,7 +30,7 @@
 		{
 			name:	'health',
 			colors:	['#53C294'],
-			tags: 	['mental_health', 'sti', 'pregnancy', 'care']
+			tags: 	['mental_health', 'sti', 'pregnancy', 'care', 'palliative']
 		},
 
 		{
