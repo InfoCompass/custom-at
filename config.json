@@ -2,6 +2,7 @@
 	"xbackendLocation":     "http://127.0.0.1:2411",
 	"backendLocation":      "https://api.beratungsnetz-migration.de",
 	"publicItems":          "https://public.beratungsnetz-migration.de/items",
+	"publicApi":          	"https://public.beratungsnetz-migration.de",
 	"statsLocation":        "https://stats.beratungsnetz-migration.de",
 	"frontendLocation":     "https://www.beratungsnetz-migration.de",
 	"block":                "",
