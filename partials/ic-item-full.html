@@ -263,7 +263,15 @@
 		</div>
 	</div>
 
-
+	<article 
+		class = "screen-only"
+		ng-if = "item.lastEditDate"
+	>		
+		<div> <!-- spacer --> </div>
+		<div>
+				{{'ITEMS.LAST_CHANGE' | translate}}: {{item.lastEditDate | icDate}}			
+		</div>
+	</article>
 
 
 </section>
