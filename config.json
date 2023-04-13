@@ -7,7 +7,7 @@
 	"frontendLocation":     "https://www.beratungsnetz-migration.de",
 	"block":                "",
 	"title":                "Berliner Beratungsnetz für Zugewanderte",
-	"disableLists":         true,
+	"disableLists":         false,
 	"languages":            ["de", "en"],
 	"adminLanguages":		["none"],
 	"activeIconColor":      "#659FD8",
