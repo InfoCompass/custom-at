@@ -57,13 +57,13 @@
 		{
 			name:	'family',
 			colors:	['#f74b41'],
-			tags:	[]
+			tags:	['block_mothers', "multi_language_children", 'family_conflicts']
 		},
 
 		{
 			name:	'misc_category',
 			colors:	['#9CAEC2'],
-			tags: 	['debt', 'family_conflicts', 'felony', 'sex_work', 'sport',  'benn']
+			tags: 	['debt', 'felony', 'sex_work', 'sport',  'benn']
 		}
 
 	]
