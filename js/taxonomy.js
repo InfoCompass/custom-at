@@ -63,7 +63,7 @@
 		{
 			name:	'misc_category',
 			colors:	['#9CAEC2'],
-			tags: 	['debt', 'felony', 'sex_work', 'sport',  'benn', 'counseling_neighbourhood']
+			tags: 	['debt', 'felony', 'sex_work', 'sport', 'counseling_neighbourhood']
 		}
 
 	]
