@@ -74,6 +74,7 @@
 		target_groups: [
 			'young',
 			'women',
+			'men',
 			'families',
 			'asylum_seekers',
 			'eu_citizens',
@@ -153,6 +154,7 @@
 			'susu',
 			'swahili',
 			'tajiki',
+			'tamilian',
 			'thai',
 			'tigrinya',
 			'turkish',
