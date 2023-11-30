@@ -57,9 +57,8 @@
 			style	= "{{icPlain ? 'display: block;' : ''}}"
 		>
 			<li 
-				ng-repeat 	= "page in ic.config.pages"
+				ng-repeat 	= "page in ['about', 'manual', 'download', 'contact']"
 				class 		= "bg-0 hover" 
-				ng-if 		= "['home', 'tiles', 'tags', 'emergency'].indexOf(page) == -1"
 			> 
 				<a ic-touch-me a ng-href="/p/{{page}}">	{{'INTERFACE.%s' | fill : page| translate}}</a>	
 			</li>
