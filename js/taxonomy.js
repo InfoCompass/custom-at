@@ -36,7 +36,7 @@
 		{
 			name:	'labour',
 			colors:	['#438eba'],
-			tags: 	[]
+			tags: 	['professional_recognition', 'study', 'self_employment']
 		},
 		{
 			name:	'migration_counseling',
