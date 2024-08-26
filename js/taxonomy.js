@@ -83,7 +83,7 @@
 			'lgbtiq',
 			'misc_target',
 			'elderly',
-			'bipoc'
+			'bipoc',
 			'disabled'
 		],	
 		districts: [
