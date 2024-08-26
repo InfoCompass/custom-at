@@ -36,7 +36,7 @@
 		{
 			name:	'labour',
 			colors:	['#438eba'],
-			tags: 	['professional_recognition', 'study', 'self_employment']
+			tags: 	['professional_recognition', 'study', 'self_employment', 'righttostay_training', 'labour_training']
 		},
 		{
 			name:	'migration_counseling',
@@ -84,6 +84,7 @@
 			'misc_target',
 			'elderly',
 			'bipoc'
+			'disabled'
 		],	
 		districts: [
 			'mitte',
