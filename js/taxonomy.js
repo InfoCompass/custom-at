@@ -41,7 +41,7 @@
 		{
 			name:	'migration_counseling',
 			colors:	['#f16a3c'],
-			tags: 	[]
+			tags: 	['mc_mbe', 'mc_msd', 'mc_jmd']			
 		},
 		{
 			name:	'support',
@@ -63,7 +63,7 @@
 		{
 			name:	'misc_category',
 			colors:	['#9CAEC2'],
-			tags: 	['debt', 'felony', 'sex_work', 'sport', 'counseling_neighbourhood']
+			tags: 	['debt', 'felony', 'sex_work', 'sport', 'counseling_neighbourhood', 'empowerment']
 		}
 
 	]
@@ -82,7 +82,8 @@
 			'houseless',
 			'lgbtiq',
 			'misc_target',
-			'elderly'
+			'elderly',
+			'bipoc'
 		],	
 		districts: [
 			'mitte',
