@@ -119,6 +119,7 @@
 			'dutch',
 			'english',
 			'farsi',
+			'filipino',
 			'french',
 			'georgian', 			// Geordisch
 			'greek',
