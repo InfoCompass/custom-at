@@ -85,7 +85,13 @@
 			'elderly',
 			'bipoc',
 			'disabled'
+		],
+
+		reach: [
+			'cross_district',		// überbezirklich
+			'district_limited'		// bezirklich
 		],	
+
 		districts: [
 			'mitte',
 			'friedrichshain_kreuzberg',
@@ -208,7 +214,9 @@
 			'senias_msd',
 			'senias_partin',
 			'senjustva',
-		]
+		],
+
+
 	}
 
 

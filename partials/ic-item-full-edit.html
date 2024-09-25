@@ -219,7 +219,7 @@
 
 	<!-- tags/unsorted -->
 
-	<article ng-repeat = "key in ['target_groups', 'districts', 'languages', 'sponsors']">
+	<article ng-repeat = "key in ['target_groups', 'reach', 'districts', 'languages', 'sponsors']">
 		<div> <!-- spacer --> </div>
 		<div>
 			<h4> {{'ITEMS.%s' | fill : key | translate}}</h4>
@@ -237,7 +237,8 @@
 				ic-translation-key			= "{{key}}"
 				ic-options					= "ic.taxonomy.tags[key]"
 				ic-option-label				= "'UNSORTED_TAGS.%s' | fill: option | translate"
-				ic-allow-multiple-choices	= "true"
+				ic-allow-multiple-choices	= "key != 'reach'"
+				ic-check-none				= "key == 'reach'"
 				ic-key						= "tags"
 			></ic-item-property-edit>
 

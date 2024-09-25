@@ -107,12 +107,6 @@ ic-taxonomy-overlay ul li div {
 	vertical-align:				middle;
 }
 
-ic-taxonomy-overlay ul li .bubble {
-	display:					inline-block;
-	flex:						0 0 auto;
-}
-
-
 
 ic-survey-popup button {
 	position:					absolute !important;
