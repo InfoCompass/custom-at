@@ -25,7 +25,7 @@
 	</a><!--
  --><a
 		class		= "ic-tag"
-		ng-repeat 	= "tag in ic.taxonomy.tags | flatten : null : 'sponsors' | preventLoop"
+		ng-repeat 	= "tag in ic.taxonomy.tags | flatten : null : ['sponsors', 'reach'] | preventLoop"
 		ng-if		= "(tag | in: icTags)"
 		ng-href		= "/list/u/{{::tag}}"
 	>

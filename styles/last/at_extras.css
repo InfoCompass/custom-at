@@ -136,6 +136,11 @@ ic-item-full .sponsors .title {
 	line-height:				1.5rem;
 }
 
+ic-item-full .reach .title {
+	font-weight:				700;
+	line-height:				1.5rem;
+}
+
 ic-item-full .sponsors .logos {
 	display:					flex;
 	flex-wrap:					wrap;

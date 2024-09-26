@@ -168,7 +168,29 @@
 	</ic-item-property>
 
 
+	<!-- reach -->
 
+	<article 
+		class 	= "reach screen-only"
+		ng-if	= "(item | icUnsortedTags : 'reach').length > 0" 
+	>
+
+		<div> <!-- spacer --> </div>
+		<div>
+			<div class = "title">{{'ITEMS.REACH' | translate }}</div>
+
+			<div ng-repeat 	= "tag in item | icUnsortedTags : 'reach'">
+				<a
+					class		= "active block"
+					ng-href		= "/list/u/{{::tag}}"
+				>
+					{{'UNSORTED_TAGS.%s' | fill : tag | translate}}
+				</a>
+				<br/>
+			</div>
+		
+		</div> 
+	</article>
 
 	<!-- misc -->
 
