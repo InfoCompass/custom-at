@@ -51,7 +51,7 @@
 		{
 			name:	'violence',
 			colors:	['#f0d319'],
-			tags: 	[]
+			tags: 	['human_trafficking']
 		},
 
 		{
