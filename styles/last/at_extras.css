@@ -170,6 +170,11 @@ ic-page #sponsors {
 ic-page #sponsors > *{
 	width:						20rem;
 	max-width:					100%;
+	display: 					flex;
+	flex-direction:				column;
+	justify-content:			space-between;
+	max-width:					30%;
+	flex:						1 0 0;
 
 }
 
@@ -179,7 +184,7 @@ ic-page #sponsors > * .logos{
 	flex-direction:				column;
 	justify-content:			center;	
 	align-items:				center;
-	margin:						auto;
+	margin:						0 auto;
 }
 
 
@@ -215,7 +220,8 @@ ic-page #sponsors > *:nth-child(3) .logos{
 }
 
 ic-page #sponsors > *:nth-child(3) .logos > a {
-	height:						4rem;	
+	height:						4rem;
+	width:						15rem;	
 }
 
 
@@ -223,6 +229,7 @@ ic-page #sponsors > *:nth-child(3) .logos > a {
 
 ic-page #sponsors > *:nth-child(4) {
 	flex:						1 0 100%;
+	max-width:					100%;
 	height:						auto;
 }
 
