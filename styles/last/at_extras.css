@@ -212,7 +212,7 @@ ic-page #sponsors > *:nth-child(2) .logos > a {
 
 
 
-
+/*
 ic-page #sponsors > *:nth-child(3) .logos{
 	height:						15rem;
 	width:						15rem;
@@ -224,16 +224,16 @@ ic-page #sponsors > *:nth-child(3) .logos > a {
 	width:						15rem;	
 }
 
+*/
 
 
-
-ic-page #sponsors > *:nth-child(4) {
+ic-page #sponsors > *:nth-child(3) {
 	flex:						1 0 100%;
 	max-width:					100%;
 	height:						auto;
 }
 
-ic-page #sponsors > *:nth-child(4) .logos > a {
+ic-page #sponsors > *:nth-child(3) .logos > a {
 	height:						5rem;
 	width:						45rem;
 	max-width:					100%;
