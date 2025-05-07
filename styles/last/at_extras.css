@@ -165,6 +165,8 @@ ic-page #sponsors {
 	justify-content: 			space-around;
 	text-align:					center;
 	margin-bottom:				1rem;
+	width:						80rem;
+	max-width:					100%;
 }
 
 ic-page #sponsors > *{
