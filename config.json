@@ -5,6 +5,7 @@
 	"publicApi":          	"https://public.beratungsnetz-migration.de",
 	"statsLocation":        "https://stats.beratungsnetz-migration.de",
 	"frontendLocation":     "https://www.beratungsnetz-migration.de",
+	"xtilesUrl":             "https://beratungsnetz.placemakingberlin.de/wp-json/custom/v1/allTiles",	
 	"block":                "",
 	"title":                "Berliner Beratungsnetz für Zugewanderte",
 	"disableLists":         false,
@@ -12,8 +13,28 @@
 	"adminLanguages":		["none"],
 	"activeIconColor":      "#659FD8",
 	"plainIconColor":       "#666666",
-	"pages":                ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine", "download"],
+	"pages_old":            ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine", "download"],
+	"pages":				["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "download"],
 	"adminPages":           ["icons"],
+	"remotePages":          {                                
+								"url": "https://beratungsnetz.placemakingberlin.de/wp-json/custom/v1/allPages",
+								"pages":{
+									"home":			26,
+									"news":			40,
+									"legal": 		32,
+									"emergency": 	32,
+									"manual": 		24,
+									"contact": 		17,
+									"download": 	16,
+									"about": 		8
+
+
+								},
+								"map": {
+										"id":           "id",
+										"translations": "translations"
+								}
+							},
 	"map":{
 			"center":               [52.518611,13.408333],
 			"zoom":                 10,
