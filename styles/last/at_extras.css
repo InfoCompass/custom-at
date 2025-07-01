@@ -255,6 +255,13 @@ ic-page #sponsors > * .logos a + a {
 	margin-top:					1rem;
 }
 
+.XS ic-page #sponsors,
+.XS ic-page #sponsors  * {
+	flex-direction:				column;
+	max-width:					100%;
+}
+
+
 .boxed {
 	font-size:					0.9em !important;
 	font-weight:				600 !important;
