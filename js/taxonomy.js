@@ -175,48 +175,6 @@
 			'wolof',
 		],
 
-
-		sponsors:[
-			'aktion_mensch',
-			'amif',
-			'ba_charlottenburg_wilmersdorf',
-			'ba_friedrichshain_kreuzberg',
-			'ba_lichtenberg',
-			'ba_marzahn_hellersdorf',
-			'ba_mitte',
-			'ba_neukölln',
-			'ba_pankow',
-			'ba_reinickendorf',
-			'ba_spandau',
-			'ba_steglitz_zehlendorf',
-			'ba_tempelhof_schoeneberg',
-			'ba_treptow_koepenik',
-			'bamf_jmd',
-			'bamf_mbe',
-			'bmas',
-			'bmfsfj',
-			'bmg',
-			'bmi',
-			'bzga',
-			'ehap',
-			'esf',
-			'esf_plus',
-			'iq',
-			'jobcenter',
-			'lotto',
-			'senbjf',
-			'senbjf_stm',
-			'sengpg',
-			'senias',
-			'senias_akrom',
-			'senias_intlot',
-			'senias_mifl',
-			'senias_msd',
-			'senias_partin',
-			'senjustva',
-		],
-
-
 	}
 
 
