@@ -66,6 +66,10 @@
 		"properties": ["title", "description", "primaryTopic", "address", "zip", "contact", "email", "phone"],
 		"tagGroups": ["districts", "target_groups", "sponsors"]
 	},	
+	"matomo":{
+        "url":      "https://matomo.mittendrin.in",
+        "siteId":   "3"
+    },
 	"xxchatbot": {
 		"initPayload":  "/start",
 		"customData":   {"language": "de"},
