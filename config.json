@@ -14,7 +14,7 @@
 	"activeIconColor":      "#659FD8",
 	"plainIconColor":       "#666666",
 	"pages_old":            ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine", "download"],
-	"pages":				["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "download"],
+	"pages":				["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "download", "matomo"],
 	"adminPages":           ["icons"],
 	"remotePages":          {                                
 								"url": "https://beratungsnetz.placemakingberlin.de/wp-json/custom/v1/allPages",
