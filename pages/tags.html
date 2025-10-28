@@ -1,0 +1,47 @@
+<article>
+	<h1>{{'INTERFACE.CATEGORIES' | translate}}</h1>
+
+	<ic-category
+		ng-repeat 	= "category in ic.taxonomy.categories | orderBy : ic.utils.evalItems('item.name.substr(0,4) == \'misc\' ? null : (item.pos || (\'CATEGORIES.%s\' | fill : item.name | translate))')"
+		ng-if		= "ic.itemStorage.currentStats.subMatches[category.name]"
+	>
+		<div class = "icon large icon-category-{{category.name}} ic-bg-cat-{{category.name}} round"></div>
+		<div class = "content">
+			<h3><a ng-href = "/list/c/{{::category.name}}">{{'CATEGORIES.%s' | fill : category.name | translate}}</a></h3>
+			<p>
+				{{'CATEGORIES.%s_NOTE' | fill : category.name | translate}}
+			</p>
+			<div>
+				<a
+					href  		= "/list/c/{{::category.name}}"
+					class		= "ic-tag ic-bg-cat-{{category.name}} col-2 hover"
+				>
+					<span>
+						{{'INTERFACE.FILTER_ANY' | translate}} 
+					</span>
+					<span 
+						class = "bubble shade-light"
+					>
+						{{ic.itemStorage.currentStats.subMatches[category.name]}}
+					</span>
+				</a>
+				<a
+					ng-repeat 	= "tag in category.tags"
+					href  		= "/list/c/{{tag}}"
+					class		= "ic-tag ic-bg-cat-{{category.name}} col-2 hover"
+					ng-if		= "ic.itemStorage.currentStats.subMatches[tag]"
+				>
+					<span>
+						{{'CATEGORIES.%s' | fill : tag | translate}} 
+					</span>
+					<span 
+						class = "bubble shade-light"
+					>
+						{{ic.itemStorage.currentStats.subMatches[tag]}}
+					</span>
+				</a>
+			</div>
+		</div>
+	</ic-category>
+
+</article>

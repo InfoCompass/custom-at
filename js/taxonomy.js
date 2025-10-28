@@ -32,20 +32,19 @@
 			colors:	['#53C294'],
 			tags: 	['mental_health', 'sti', 'pregnancy', 'care', 'palliative']
 		},
-
 		{
 			name:	'labour',
-			colors:	['#438eba'],
+			colors:	['#5E96C5'],
 			tags: 	['professional_recognition', 'study', 'self_employment', 'righttostay_training', 'labour_training']
 		},
 		{
 			name:	'migration_counseling',
-			colors:	['#f16a3c'],
+			colors:	['#f1635B'],
 			tags: 	['mc_mbe', 'mc_msd', 'mc_jmd']			
 		},
 		{
 			name:	'support',
-			colors:	['#b2c060'],
+			colors:	['#9FC060'],
 			tags: 	[]
 		},
 		{
@@ -56,7 +55,7 @@
 
 		{
 			name:	'family',
-			colors:	['#f74b41'],
+			colors:	['#FC8023'],
 			tags:	['block_mothers', "multi_language_children", 'family_conflicts']
 		},
 

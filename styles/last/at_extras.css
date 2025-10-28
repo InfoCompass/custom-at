@@ -288,3 +288,26 @@ ic-overlays ic-main-menu > ul > li:nth-child(4){
 ic-overlays ic-main-menu > ul > li:nth-child(5){
 	padding-top	:				0rem;
 }
+
+
+/** Footer **/
+
+ic-footer a {
+	display:					inline;
+	border:						none;
+	border-radius:				0;
+	margin-right:				1rem;
+	font-weight: 				600;
+	padding: 					0.5rem;
+}
+
+
+/** Tiles **/
+
+ic-page .tiles > * > .content > h3 {
+	margin:						1rem 0;
+	font-weight:				600;
+	font-size:					1.3rem;	
+}
+
+ 

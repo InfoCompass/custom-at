@@ -11,7 +11,7 @@
 	"disableLists":         false,
 	"languages":            ["de", "en"],
 	"adminLanguages":		["none"],
-	"activeIconColor":      "#659FD8",
+	"activeIconColor":      "#5595D2",
 	"plainIconColor":       "#666666",
 	"pages_old":            ["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "ukraine", "download"],
 	"pages":				["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "download", "matomo"],
@@ -39,7 +39,9 @@
                                 "options", 
                                 "icons"
                             ],
+
 	"mappo":				"https://mappo.beratungsnetz-migration.de",
+	
 	"map":{
 			"center":               [52.518611,13.408333],
 			"zoom":                 10,
