@@ -319,3 +319,14 @@ ic-page .tiles > * > .content > p {
  ic-header .tools a span, ic-header .tools .normal {
  	font-weight:				500 !important;
  }
+
+/* tags */
+
+.shade-light,
+.col-2 {
+	color: var(--dark-text-color) !important;
+}
+.ic-tag {
+	font-weight:					normal;
+}
+

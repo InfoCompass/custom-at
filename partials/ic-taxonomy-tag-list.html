@@ -1,5 +1,5 @@
 	<a
-		class		= "ic-tag ic-bg-type-{{::type.name}}"
+		class		= "ic-tag ic-bg-type-{{::type.name}} col-2"
 		ng-repeat 	= "type in ic.taxonomy.types"
 		ng-if		= "type.name | in : icTags"
 		ng-href		= "/list/t/{{::type.name}}"
@@ -7,7 +7,7 @@
 		{{'TYPES.%s' | fill : type.name | translate}}
 	</a><!--
  --><a
-		class		= "ic-tag ic-bg-cat-{{::category.name}}"
+		class		= "ic-tag ic-bg-cat-{{::category.name}} col-2"
 		ng-repeat-start 	= "category in ic.taxonomy.categories"
 		ng-if		= "category.name | in : icTags"
 		ng-href		= "/list/c/{{::category.name}}"
@@ -15,7 +15,7 @@
 		{{'CATEGORIES.%s' | fill : category.name | translate}}
 	</a><!--
  --><a
-		class		= "ic-tag ic-bg-cat-{{::category.name}}"
+		class		= "ic-tag ic-bg-cat-{{::category.name}} col-2"
 		ng-repeat	= "tag in category.tags"
 		ng-repeat-end
 		ng-if		= "tag | in : icTags"
@@ -24,7 +24,7 @@
 		{{'CATEGORIES.%s' | fill : tag | translate}}
 	</a><!--
  --><a
-		class		= "ic-tag"
+		class		= "ic-tag col-2"
 		ng-repeat 	= "tag in ic.taxonomy.tags | flatten : null : ['sponsors', 'reach', 'options_sp'] | preventLoop"
 		ng-if		= "(tag | in: icTags)"
 		ng-href		= "/list/u/{{::tag}}"

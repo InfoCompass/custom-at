@@ -1,14 +1,16 @@
 <a 
-	ng-if		= "tilesReady"
-	ng-repeat 	= "tile in ic.tiles | orderBy : 'order'"
-	ng-href		= "{{tile.link}}"
-	ng-style	= "{ width: tile.stretch ? '100%' : null}"
-	ng-class	= "{bottom: tile.bottom}"
-	
+	ng-if			= "tilesReady"
+	ng-repeat 		= "tile in ic.tiles | orderBy : 'order'"
+	ng-href			= "{{tile.link}}"
+	ng-style		= "{ width: tile.stretch ? '100%' : null}"
+	ng-class		= "{bottom: tile.bottom}"
+	ng-mouseenter 	= "hover = true"
+	ng-mouseleave 	= "hover = false"
 >
 	<div
 		class 		= "background {{tile.icon ?  ' icon icon-'+tile.icon : ''}} {{tile.background ? 'background-image image-'+tile.background : ''}} {{tile.backgroundUrl ? 'background-image' : ''}}"
 		ng-style	= "{'background-color': tile.color}"
+		ng-class	= "{ white: hover }"
 		style		= "{{tile.backgroundUrl ? 'background-image: url('+tile.backgroundUrl+');' : ''}}"
 	>
 	</div>
