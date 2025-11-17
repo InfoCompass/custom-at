@@ -310,10 +310,29 @@ ic-footer a {
 
 /** Tiles **/
 
-ic-page .tiles > * > .content > h3 {
-	margin:						1rem 0;
-	font-weight:				600;
-	font-size:					1.3rem;	
+ic-page .tiles > *:not(:hover) > .content {
+	color:						#000;
 }
 
- 
+ic-page .tiles > * > .content > h3 {
+	font-weight:				600;
+}
+
+ic-page .tiles > * > .content > p {
+	font-weight:				500;
+}
+
+ ic-header .tools a span, ic-header .tools .normal {
+ 	font-weight:				500 !important;
+ }
+
+/* tags */
+
+.shade-light,
+.col-2 {
+	color: var(--dark-text-color) !important;
+}
+.ic-tag {
+	font-weight:					normal;
+}
+
