@@ -8,6 +8,11 @@ ic-header .logo ic-logo-full {
 	font-size:					5rem;
 }
 
+ic-header ic-main-menu {
+	background-color:			#608CB9;
+}
+
+
 ic-page p {
 	line-height:				1.85em;
 }
@@ -25,6 +30,7 @@ ic-page header .search {
 	left:						0;
 	right:						0;
 }
+
 
 ic-page	h3 {
 	font-size:					1.75em;
