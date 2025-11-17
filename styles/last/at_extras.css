@@ -310,7 +310,7 @@ ic-footer a {
 
 /** Tiles **/
 
-ic-page .tiles > *:not(:hover) > .content {
+ic-page .tiles > *:not(:hover):not(:focus) > .content {
 	color:						#000;
 }
 
