@@ -314,6 +314,10 @@ ic-page .tiles > *:not(:hover):not(:focus) > .content {
 	color:						#000;
 }
 
+ic-page .tiles > *:not(:hover):not(:focus)  .icon {
+	filter:						invert(1);
+}
+
 ic-page .tiles > * > .content > h3 {
 	font-weight:				600;
 }
