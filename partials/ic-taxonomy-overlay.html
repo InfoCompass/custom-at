@@ -44,8 +44,8 @@
 		<div>{{'CATEGORIES.%s' | fill : category.name | translate}}</div>
 		
 		<span 
-			class 		= "bubble shade-light "
-			ng-class	= "{'col-2': active, 'col-1': !active}"
+			class 		= "bubble"
+			ng-class	= "{'shade-light': active, 'shade-dark': !active}"
 			ng-if 		= "!disabled"
 		>
 			<span>
