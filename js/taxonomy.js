@@ -31,7 +31,8 @@
 				"antisemitism",	// Antisemitismus
 				"islamophobia",	// Islamfeindlichkeit
 				"discriminition_anti-queer",	// Queerfeindlichkeit
-				"disability-age-discrimination" //Behinderungen/Alter  
+				"disability-age-discrimination", //Behinderungen/Alter
+				"antiziganism" //Antiziganismus
 			]
 		},
 		{
