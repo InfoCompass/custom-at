@@ -25,7 +25,14 @@
 		{
 			name:	'discrimination',
 			colors:	['#d69255'],
-			tags: 	[]
+			tags: 	[
+				"discrimination_general", 		// Übergreifend
+				"racism", 		// Rassismus
+				"antisemitism",	// Antisemitismus
+				"islamophobia",	// Islamfeindlichkeit
+				"discriminition_anti-queer",	// Queerfeindlichkeit
+				"disability-age-discrimination" //Behinderungen/Alter  
+			]
 		},
 		{
 			name:	'health',
