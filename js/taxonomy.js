@@ -29,9 +29,9 @@
 				"discrimination_general", 		// Übergreifend
 				"racism", 		// Rassismus
 				"antisemitism",	// Antisemitismus
-				"islamophobia",	// Islamfeindlichkeit
-				"discriminition_anti-queer",	// Queerfeindlichkeit
-				"disability-age-discrimination", //Behinderungen/Alter
+				"islamophobia",	// Islamfeindlichkeit			
+				"discriminition_anti_queer",	// Queerfeindlichkeit
+				"discrimination_disability_age", //Behinderungen/Alter
 				"antiziganism" //Antiziganismus
 			]
 		},
