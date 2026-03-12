@@ -67,7 +67,7 @@
 	},
 	"export":{
 		"properties": ["title", "description", "primaryTopic", "address", "zip", "contact", "email", "phone"],
-		"tagGroups": ["districts", "target_groups", "sponsors"]
+		"tagGroups": ["districts", "target_groups", "sponsors", "options_sp"]
 	},	
 	"matomo":{
         "url":      "https://matomo.mittendrin.in",
