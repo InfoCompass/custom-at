@@ -43,7 +43,7 @@
 		{
 			name:	'labour',
 			colors:	['#5E96C5'],
-			tags: 	['professional_recognition', 'study', 'self_employment', 'righttostay_training', 'labour_training']
+			tags: 	['professional_recognition', 'study', 'self_employment', 'righttostay_training', 'labour_training', 'labour_exploitation']
 		},
 		{
 			name:	'migration_counseling',
