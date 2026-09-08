@@ -5,7 +5,7 @@
 	"publicApi":          	"https://public.beratungsnetz-migration.de",
 	"statsLocation":        "https://stats.beratungsnetz-migration.de",
 	"frontendLocation":     "https://www.beratungsnetz-migration.de",
-	"xtilesUrl":             "https://beratungsnetz.placemakingberlin.de/wp-json/custom/v1/allTiles",	
+	"xtilesUrl":             "https://cms.beratungsnetz-migration.de/allTiles",	
 	"block":                "",
 	"title":                "Berliner Beratungsnetz für Zugewanderte",
 	"disableLists":         false,
@@ -17,7 +17,7 @@
 	"pages":				["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "download", "matomo"],
 	"adminPages":           ["icons"],
 	"remotePages":          {                                
-								"url": "https://beratungsnetz.placemakingberlin.de/wp-json/custom/v1/allPages",
+								"url": "https://beratungsnetz-migration.de/allPages",
 								"pages":{
 									"home":			26,
 									"news":			40,
