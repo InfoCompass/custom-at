@@ -17,7 +17,7 @@
 	"pages":				["home", "tags", "about", "news", "legal", "contact", "tiles", "emergency", "manual", "download", "matomo"],
 	"adminPages":           ["icons"],
 	"remotePages":          {                                
-								"url": "https://beratungsnetz-migration.de/allPages",
+								"url": "https://cms.beratungsnetz-migration.de/allPages",
 								"pages":{
 									"home":			26,
 									"news":			40,
