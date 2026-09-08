@@ -72,7 +72,7 @@
         </button>
 
         <button 
-          ng-repeat   = "tag in category.tags"
+          ng-repeat   = "tag in category.tags | orderBy : ic.utils.evalItems('(\'CATEGORIES.%s\' | fill : item | translate)')"
           class   = "icon icon-interface-radio"         
           ic-button = "{active:ic.filterConfig.categoryActive(tag), disabled: !ic.itemStorage.currentStats.altMatches[tag]}"
           ng-class  = "{'checked':active, disabled: disabled}"
