@@ -62,6 +62,14 @@
 			> 
 				<a ic-touch-me a ng-href="/p/{{page}}">	{{'INTERFACE.%s' | fill : page| translate}}</a>	
 			</li>
+			<li ng-if = "ic.consent.to('map_tiles').isGiven">
+				<a
+					ic-touch-me
+					ng-click 	= "ic.consent.clear()"
+				>
+					{{'INTERFACE.REVOKE_AND_RELOAD' | translate}}
+				</a>
+			</li>
 
 			<li  
 				class = "bg-0 hover"
@@ -69,7 +77,7 @@
 				ic-touch-me
 			>
 				<a  
-					ic-touch-me
+					
 					ng-click = "ic.overlays.toggle('login')"
 				>{{'INTERFACE.LOGIN' | translate }}
 				</a>
