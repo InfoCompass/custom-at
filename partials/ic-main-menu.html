@@ -62,9 +62,11 @@
 			> 
 				<a ic-touch-me a ng-href="/p/{{page}}">	{{'INTERFACE.%s' | fill : page| translate}}</a>	
 			</li>
-			<li ng-if = "ic.consent.to('map_tiles').isGiven">
-				<a
-					ic-touch-me
+			<li 
+				ng-if = "ic.consent.to('map_tiles').isGiven"
+				ic-touch-me
+			>
+				<a					
 					ng-click 	= "ic.consent.clear()"
 				>
 					{{'INTERFACE.REVOKE_AND_RELOAD' | translate}}
